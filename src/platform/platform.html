@@ -1,0 +1,2783 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="author" content="MOURCHID Mohamed Kamal">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/favicon.png">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+
+    <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+    <script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script>
+    <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+    <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+        
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+    <title>Build amazing User-First experiences across all devices</title>
+    <meta name="description" content="">
+    <link rel="canonical" href="https://example.com/">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|roboto|Anton&amp;display=swap" rel="stylesheet">
+
+    <style amp-custom>
+        body {
+            --main-color-1: #343a40;
+            --main-bg-color: #fff;
+            --main-tx-color-1: #343a40;
+            --white-color: rgba(255, 0, 0, 0.5);
+            --navbar-bg-color: rgba(0, 0, 0, 0);
+            --navbar-tx-color: #343a40;
+            --footer-bg-color: #ffffffFF;
+            --footer-tx-color: #343a40;
+            --title-font: 'Julius Sans One', sans-serif;
+            --text-font: 'roboto', sans-serif;
+            --main-btn-radius: 30px;
+            --title-1-desktop: 43 Julius Sans Onepx 'Undefined', sans-serif;
+            --title-1-mobile: 35 Julius Sans Onepx 'Undefined', sans-serif;
+            --title-2-desktop: 44Julius Sans Onepx 'Anton', sans-serif;
+            --title-2-mobile: 28 Julius Sans Onepx 'Anton', sans-serif;
+            --title-3-desktop: 31 Julius Sans Onepx 'Undefined', sans-serif;
+            --title-3-mobile: 27 Julius Sans Onepx 'Undefined', sans-serif;
+            --title-4-desktop: 25 Julius Sans Onepx 'Undefined', sans-serif;
+            --title-4-mobile: 18 Julius Sans Onepx 'Undefined', sans-serif;
+            --text-1-desktop: 24 robotopx 'Undefined', sans-serif;
+            --text-1-mobile: 23 robotopx 'Undefined', sans-serif;
+            --text-2-desktop: 21 robotopx 'Undefined', sans-serif;
+            --text-2-mobile: 21 robotopx 'Undefined', sans-serif;
+            --text-3-desktop: 18 robotopx 'Undefined', sans-serif;
+            --text-3-mobile: 18 robotopx 'Undefined', sans-serif;
+            --text-4-desktop: 12 robotopx 'Roboto', sans-serif;
+            --text-4-mobile: 13 robotopx 'Roboto', sans-serif;
+            font-size: 1.0625rem;
+            position: relative
+        }
+        
+        .display-title-2 {
+            font: var(--title-2-desktop)
+        }
+        
+        .display-title-3 {
+            font: var(--title-3-desktop)
+        }
+        
+        .display-title-4 {
+            font: var(--title-4-desktop)
+        }
+        
+        .display-text-1 {
+            font: var(--text-1-desktop)
+        }
+        
+        .display-text-2 {
+            font: var(--text-2-desktop)
+        }
+        
+        .display-text-3 {
+            font: var(--text-3-desktop)
+        }
+        
+        .display-text-4 {
+            font: var(--text-4-desktop)
+        }
+        
+        @media (max-width:768px) {
+            .display-title-1 {
+                font: var(--title-1-mobile)
+            }
+            .display-title-2 {
+                font: var(--title-2-mobile)
+            }
+            .display-title-3 {
+                font: var(--title-3-mobile)
+            }
+            .display-title-4 {
+                font: var(--title-4-mobile)
+            }
+            .display-text-1 {
+                font: var(--text-1-mobile)
+            }
+            .display-text-2 {
+                font: var(--text-2-mobile)
+            }
+            .display-text-3 {
+                font: var(--text-3-mobile)
+            }
+            .display-text-4 {
+                font: var(--text-4-mobile)
+            }
+        }
+        
+        .btn {
+            display: inline-block;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 13px;
+            transition: all .2s ease-in-out;
+            border: 0 solid #fff;
+            padding: 10px 40px;
+            min-width: 120px
+        }
+        
+        .btn-1,
+        .btn-2,
+        .btn-3 {
+            border-radius: var(--main-btn-radius)
+        }
+        
+        .btn-1 {
+            border: 0;
+            color: #fff;
+            letter-spacing: 3px;
+            background-color: var(--main-color-1)
+        }
+        
+        .btn-2,
+        .btn-3 {
+            border: 2px solid var(--main-color-1);
+            background-color: var(--main-tx-color-1);
+            color: var(--main-color-1)
+        }
+        
+        .btn-3 {
+            border: 1px solid var(--main-tx-color-1);
+            letter-spacing: 3px
+        }
+        
+        .btn-4 {
+            border: .1rem solid;
+            border-radius: 1px;
+            display: inline-flex;
+            align-items: center;
+            overflow: hidden
+        }
+        
+        .btn-4::after,
+        .btn-5::after {
+            content: "→";
+            font-size: 25px;
+            position: relative;
+            left: 8px;
+            align-self: center;
+            top: auto;
+            bottom: auto
+        }
+        
+        .btn-5::after {
+            content: " ";
+            opacity: 0;
+            left: 20px
+        }
+        
+        .btn-4:hover {
+            transform: translate(10px, 0)
+        }
+        
+        .btn-4,
+        .btn-5,
+        .btn-6 {
+            position: relative;
+            padding: 10px 20px
+        }
+        
+        .btn-4:hover,
+        .btn-5,
+        .btn-5:hover::after {
+            transition: all .3s ease-in-out
+        }
+        
+        .btn-5 {
+            border: .1rem solid;
+            border-radius: 1px;
+            display: inline-flex;
+            align-items: center;
+            overflow: hidden
+        }
+        
+        .btn-5:hover::after {
+            opacity: 1;
+            left: 8px;
+            content: "→"
+        }
+        
+        .btn-6 {
+            transition: .5s;
+            -webkit-transition: .5s;
+            box-sizing: border-box
+        }
+        
+        .btn-6,
+        .btn-6:hover {
+            border: 0
+        }
+        
+        .btn-6::after,
+        .btn-6::before {
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scale(0);
+            -webkit-transform: scale(0);
+            transition: .4s all ease-in-out
+        }
+        
+        .btn-6:hover::after,
+        .btn-6:hover::before {
+            -webkit-transform: scale(1);
+            transform: scale(1)
+        }
+        
+        .btn-6::before {
+            border-bottom: 2px solid;
+            border-left: 2px solid;
+            border-radius: inherit;
+            transform-origin: 0 100%;
+            -webkit-transform-origin: 0 100%
+        }
+        
+        .btn-6::after {
+            border-top: 2px solid;
+            border-right: 2px solid;
+            border-radius: inherit;
+            transform-origin: 100% 0;
+            -webkit-transform-origin: 100% 0
+        }
+        
+        .center {
+            text-align: center
+        }
+        
+        .left {
+            text-align: left
+        }
+        
+        .right {
+            text-align: right
+        }
+        
+        .cover img {
+            object-fit: cover
+        }
+        
+        .cover {
+            background-size: cover;
+            background-repeat: no-repeat
+        }
+        
+        @media only screen and (max-width:600px) {
+            .hideonmobile {
+                display: none
+            }
+        }
+        
+        .inner_ul_abso,
+        li.drop:hover ul {
+            position: absolute;
+            z-index: 999;
+            background-color: #fff
+        }
+        
+        .inner_ul_abso {
+            width: 188px;
+            margin-top: 13px;
+            padding-bottom: 20px;
+            display: none
+        }
+        
+        .inner_ul_abso li {
+            margin-left: -25px;
+            list-style-type: none
+        }
+        
+        li.drop:hover ul {
+            display: block;
+            top: 64px;
+            padding: 10px;
+            list-style: none
+        }
+        
+        .inner_ul_abso a {
+            color: #333;
+            padding-right: 5px;
+            padding-left: 5px
+        }
+        
+        .inner_ul_abso a:hover {
+            background-color: gray;
+            color: #fff;
+            cursor: pointer
+        }
+        
+        * {
+            box-sizing: border-box
+        }
+        
+        .col-1 {
+            width: 8.33%
+        }
+        
+        .col-2 {
+            width: 16.66%
+        }
+        
+        .col-3 {
+            width: 25%
+        }
+        
+        .col-4 {
+            width: 33.33%
+        }
+        
+        .col-5 {
+            width: 41.66%
+        }
+        
+        .col-6 {
+            width: 50%
+        }
+        
+        .col-7 {
+            width: 58.33%
+        }
+        
+        .col-8 {
+            width: 66.66%
+        }
+        
+        .col-9 {
+            width: 75%
+        }
+        
+        .col-10 {
+            width: 83.33%
+        }
+        
+        .col-11 {
+            width: 91.66%
+        }
+        
+        .col-12 {
+            width: 100%
+        }
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table
+        }
+        
+        [class*=col-] {
+            float: left;
+            padding: 15px
+        }
+        
+        .inner_ul_abso li:first-child {
+            padding-top: 13px
+        }
+        
+        @media only screen and (max-width:768px) {
+            .col-1,
+            .col-10,
+            .col-11,
+            .col-2,
+            .col-3,
+            .col-4,
+            .col-5,
+            .col-6,
+            .col-7,
+            .col-8,
+            .col-9 {
+                width: 100%
+            }
+        }
+        
+        .container {
+            padding: 0 15px;
+            margin-right: auto;
+            margin-left: auto
+        }
+        
+        .no-container {
+            padding: 10px 5%
+        }
+        
+        @media (min-width:768px) {
+            .container {
+                width: 750px
+            }
+        }
+        
+        @media (min-width:992px) {
+            .container {
+                width: 970px
+            }
+        }
+        
+        @media (min-width:1200px) {
+            .container {
+                width: 1170px
+            }
+        }
+        
+        .pad10 {
+            padding: 10px
+        }
+        
+        .pad20 {
+            padding: 20px
+        }
+        
+        .padT10 {
+            padding-top: 10px
+        }
+        
+        .padT20 {
+            padding-top: 20px
+        }
+        
+        .padT30 {
+            padding-top: 30px
+        }
+        
+        .padB20 {
+            padding-bottom: 20px
+        }
+        
+        .padB30 {
+            padding-bottom: 30px
+        }
+        
+        .pad50 {
+            padding: 50px 0
+        }
+        
+        .pad70-0 {
+            padding: 70px 0
+        }
+        
+        .pad70 {
+            padding: 70px
+        }
+        
+        .pad70-20 {
+            padding: 70px 20px
+        }
+        
+        .padT50 {
+            padding-top: 50px
+        }
+        
+        .padL20 {
+            padding-left: 20px;
+            padding-bottom: 10px
+        }
+        
+        .mar0 {
+            margin: 0
+        }
+        
+        button#scrollToTopButton {
+            color: #fafafa;
+            box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, .12), 0 1px 1px 0 rgba(0, 0, 0, .24);
+            width: 62px;
+            height: 64px;
+            border-radius: 0;
+            background-color: rgba(0, 0, 0, .5);
+            z-index: 9999;
+            bottom: 20px;
+            right: 10px;
+            position: fixed;
+            opacity: 0;
+            visibility: hidden;
+            line-height: 30px;
+            padding-top: 10px;
+            font-size: 32px;
+            outline: 0;
+            border: 0
+        }
+        
+        #marker {
+            position: absolute;
+            top: 100px;
+            width: 0;
+            height: 0
+        }
+        
+        button#scrollToTopButton amp-img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto
+        }
+        
+        .circle {
+            border-radius: 50%
+        }
+        
+        .shadow {
+            box-shadow: 0 .4rem 2rem rgba(50, 58, 67, .2)
+        }
+        
+        footer li {
+            list-style-type: none;
+            line-height: 1
+        }
+        
+        @media only screen and (min-width:768px) {
+            .center-desktop {
+                text-align: center
+            }
+        }
+        
+        @media only screen and (max-width:767px) {
+            footer a,
+            h4 {
+                line-height: 1
+            }
+            .inner_ul_abso {
+                position: static;
+                display: block;
+                background-color: transparent;
+                padding-left: 41px
+            }
+            .inner_ul_abso a,
+            .inner_ul_abso li {
+                margin: 0;
+                padding: 0
+            }
+            .caption p {
+                width: 70%;
+                display: block;
+                margin: 13px auto 0
+            }
+            .res div {
+                padding-top: 20px
+            }
+            .padL20 {
+                padding-left: 10px;
+                padding-bottom: 0;
+                padding-top: 7px
+            }
+        }
+        
+        .ui-top-bar h2 {
+            margin-bottom: 0
+        }
+        
+        .menu li a {
+            cursor: pointer
+        }
+        
+        .noprice {
+            color: #666;
+            text-decoration: line-through
+        }
+        
+        .menu li a,
+        .pricing-smaller-text p {
+            font-size: 1rem
+        }
+        
+        .fixed {
+            position: fixed
+        }
+        
+        .col-sm-10,
+        .col-sm-2 {
+            width: 100%
+        }
+        
+        @media (min-width:768px) {
+            .col-sm-2 {
+                -ms-flex: 0 0 16.666667%;
+                flex: 0 0 16.666667%;
+                max-width: 16.666667%
+            }
+            .col-sm-6 {
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%
+            }
+            .ui-top-bar h2 {
+                font-size: 1.6rem
+            }
+            .top-text {
+                border-left: 2px solid #ccc
+            }
+            .col-sm-10 {
+                -ms-flex: 0 0 83.333333%;
+                flex: 0 0 83.333333%;
+                max-width: 83.333333%
+            }
+            .sidebar {
+                position: fixed
+            }
+        }
+        
+        .inner_menu li {
+            margin-left: 0;
+            padding: 3px 10px
+        }
+        
+        #sidebar1 .last,
+        #target-element ul .last,
+        .inner_menu,
+        .logo-img span,
+        .logo-txt amp-img,
+        form.amp-form-submit-success>.form-inputs {
+            display: none
+        }
+        
+        .inner_menu li:hover {
+            background-color: gray
+        }
+        
+        .inner_menu li:hover a {
+            color: #fff
+        }
+        
+        h1 {
+            font-size: 2.5rem
+        }
+        
+        h2 {
+            font-size: 5vh
+        }
+        
+        h3 {
+            font-size: 4vh
+        }
+        
+        h4 {
+            font-size: 3vh
+        }
+        
+        h5 {
+            font-size: 2.5vh
+        }
+        
+        h6 {
+            font-size: 2vh
+        }
+        
+        .ui-top-bar h2,
+        a,
+        p {
+            font-size: 1.2rem
+        }
+        
+        .s {
+            font-size: 1rem
+        }
+        
+        .xs,
+        .xs a {
+            font-size: .8rem
+        }
+        
+        .btn,
+        a,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        input,
+        label,
+        p,
+        span {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: calc(100vw - 20px);
+            margin: auto
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            line-height: 1.2em;
+            font-family: var(--title-font)
+        }
+        
+        .btn,
+        a,
+        h6,
+        input,
+        label,
+        p,
+        span {
+            font-family: var(--text-font)
+        }
+        
+        h6 {
+            font-size: 18px;
+            line-height: 1.2em
+        }
+        
+        .btn,
+        a,
+        input,
+        p,
+        span {
+            letter-spacing: .9px
+        }
+        
+        .btn,
+        a,
+        input,
+        label,
+        p,
+        span {
+            font-weight: 400;
+            line-height: 1.8em
+        }
+        
+        p {
+            font-size: 14px
+        }
+        
+        input[type=email],
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            resize: vertical
+        }
+        
+        input[type=date]::-webkit-inner-spin-button {
+            display: none
+        }
+        
+        input[type=submit] {
+            padding: 12px 20px;
+            cursor: pointer;
+            margin-top: 25px
+        }
+        
+        input,
+        input[type=submit],
+        select,
+        textarea {
+            -webkit-appearance: none
+        }
+        
+        label {
+            padding: 12px 12px 0 0;
+            float: left;
+            font-size: 14px;
+            margin-top: 10px;
+            letter-spacing: 2.8px
+        }
+        
+         ::placeholder {
+            color: inherit;
+            opacity: .5
+        }
+        
+        .img-zoom {
+            top: 0;
+            left: 0;
+            margin: 0;
+            display: block;
+            position: relative;
+            overflow: hidden
+        }
+        
+        .img-zoom img {
+            -webkit-transform: scale(1.04);
+            -ms-transform: scale(1.04);
+            transform: scale(1.04);
+            transition: all 1s cubic-bezier(.25, .46, .45, .94)
+        }
+        
+        .img-zoom img:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            cursor: pointer
+        }
+        
+        .card-hover {
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .15);
+            transition: all .2s ease-in-out
+        }
+        
+        .card-hover:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23)
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative
+        }
+        
+        @media only screen and (max-width:1300px) {
+            .parallax {
+                background-attachment: scroll
+            }
+        }
+        
+         :root {
+            --space-2: 1rem
+        }
+        
+        amp-user-notification.cookie-notification {
+            padding: var(--space-2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, .823);
+            color: #fff;
+            z-index: 10000
+        }
+        
+        amp-user-notification.cookie-notification>button {
+            min-width: 80px
+        }
+        
+        .logo-txt span,
+        a {
+            display: block;
+            color: inherit
+        }
+        
+        a {
+            text-decoration: none;
+            transition: all .2s ease-in-out
+        }
+        
+        h1 a,
+        h2 a,
+        h3 a,
+        h4 a,
+        h5 a,
+        h6 a,
+        p a {
+            color: inherit;
+            font-size: inherit;
+            font-family: inherit;
+            display: inline-block
+        }
+        
+        .btn:hover,
+        a:hover {
+            opacity: .7
+        }
+        
+        header {
+            width: 100%;
+            z-index: 1000;
+            transform: translateY(0);
+            transition: all .4s ease;
+            left: 0;
+            top: calc(0px)
+        }
+        
+        header.nav-hide-on-scroll {
+            position: fixed;
+            overflow: hidden;
+            top: 0
+        }
+        
+        header .row.navrow {
+            position: relative;
+            min-height: 65px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0
+        }
+        
+        header.nav-fix,
+        header.nav-stick {
+            -webkit-box-shadow: 0 2px 6px -6px rgba(50, 58, 67, .3);
+            -moz-box-shadow: 0 2px 6px -6px rgba(50, 58, 67, .3)
+        }
+        
+        header .nav-stick {
+            position: sticky;
+            position: -webkit-sticky;
+            box-shadow: 0 2px 6px -6px rgba(50, 58, 67, .3)
+        }
+        
+        header.nav-fix {
+            position: fixed;
+            position: -webkit-fixed;
+            box-shadow: 0 3px 6px -6px rgba(50, 58, 67, .3)
+        }
+        
+        .hamburger,
+        .logo,
+        header.nav-abso {
+            position: absolute
+        }
+        
+        nav li {
+            margin: 0 15px
+        }
+        
+        nav a {
+            font-size: 17px;
+            color: #000
+        }
+        
+        .hamburger,
+        .logo {
+            border: 0;
+            margin: auto
+        }
+        
+        .hamburger {
+            display: none;
+            padding: 0;
+            width: auto;
+            height: auto;
+            z-index: 1;
+            outline: 0;
+            top: 0;
+            bottom: 0
+        }
+        
+        .hamburger::before {
+            content: "☰"
+        }
+        
+        .logo {
+            text-decoration: none;
+            top: auto;
+            bottom: auto
+        }
+        
+        .logo-img img {
+            display: block;
+            max-width: 200px
+        }
+        
+        .logo-txt span {
+            max-width: 320px
+        }
+        
+        .nav-1 .logo {
+            left: 0
+        }
+        
+        .nav-1 #target-element ul,
+        .nav-2 #target-element ul {
+            float: right
+        }
+        
+        @media only screen and (max-width:1500px) {
+            .nav-2 .logo {
+                left: 0
+            }
+        }
+        
+        .nav-3 .row {
+            flex-wrap: wrap
+        }
+        
+        .nav-3 .logo {
+            position: relative;
+            left: 0
+        }
+        
+        .nav-3 #target-element ul {
+            display: flex;
+            justify-content: center;
+            float: none
+        }
+        
+        .nav-4 .row {
+            flex-wrap: wrap
+        }
+        
+        .nav-4 .logo {
+            display: flex;
+            position: relative;
+            margin-left: 0
+        }
+        
+        .nav-4 #target-element ul,
+        .nav-4 .logo {
+            justify-content: flex-start
+        }
+        
+        .nav-4 #target-element ul li:first-child {
+            margin-left: 0
+        }
+        
+        .nav-5 .logo {
+            left: 0
+        }
+        
+        .nav-5 #target-element ul {
+            float: right;
+            width: calc(100vw - 450px)
+        }
+        
+        #target-element li:first-child:nth-last-child(n+7),
+        #target-element li:first-child:nth-last-child(n+7)~.last {
+            display: block
+        }
+        
+        #target-element ul li:nth-child(n+6):not(.last) {
+            display: none
+        }
+        
+        #sidebar1 {
+            padding: 0 70px 0 0
+        }
+        
+        #sidebar1 nav ul {
+            margin-top: 50px
+        }
+        
+        #sidebar1 nav ul li {
+            margin-top: 15px;
+            margin-left: 30px
+        }
+        
+        @media only screen and (max-width:1000px) {
+            #target-element {
+                display: none
+            }
+            .hamburger,
+            header[class^=nav] .hamburger {
+                display: block;
+                right: 0;
+                left: initial
+            }
+            .logo,
+            header[class^=nav] .logo {
+                left: 0;
+                right: initial;
+                position: absolute
+            }
+        }
+        
+        .fwrap {
+            flex-wrap: wrap;
+            justify-content: center;
+            transition: all .8s ease-in-out;
+            -webkit-overflow-scrolling: touch;
+            scroll-snap-type: mandatory
+        }
+        
+        section {
+            position: relative
+        }
+        
+        .amp-carousel-button {
+            display: none
+        }
+        
+        .title-big {
+            font-size: 7vh
+        }
+        
+        .title-med {
+            font-size: 4vh
+        }
+        
+        @media only screen and (max-width:800px) {
+            .fwrap {
+                flex-wrap: nowrap;
+                justify-content: initial
+            }
+            section {
+                overflow: hidden
+            }
+            [class^=title-] {
+                font-size: 30px
+            }
+        }
+        
+        .testimonial-carousel p {
+            font-size: 1.2vw
+        }
+        
+        .testimonial-carousel {
+            min-height: 30vh;
+            height: auto
+        }
+        
+        .testimonial-carousel .amp-carousel-button {
+            display: initial
+        }
+        
+        @media only screen and (max-width:800px) {
+            .testimonial-carousel {
+                height: 600px
+            }
+            .testimonial-carousel p {
+                font-size: 12px
+            }
+        }
+        
+        .p-0 {
+            padding: 0
+        }
+        
+        .fa {
+            font-weight: 500
+        }
+        
+        .container-fluid {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto
+        }
+        
+        [class*=column-] {
+            float: left;
+            padding: 0
+        }
+        
+        .column-ts,
+        [class*=one-line] .column-ts {
+            width: 25%
+        }
+        
+        .column-tl,
+        [class*=one-line] .column-tl {
+            width: 100%
+        }
+        
+        [class*=two-lines] .column-ts {
+            width: 50%;
+            padding-top: 20px
+        }
+        
+        [class*=two-lines] .column-tl {
+            width: 50%
+        }
+        
+        [class*=two-lines] .column-text {
+            margin-left: -12%
+        }
+        
+        [class*=-rounded] amp-img {
+            border-radius: 50%
+        }
+        
+        @media (min-width:320px) and (max-width:1024px) {
+            h4 {
+                font-size: unset
+            }
+            [class*=one-line] .column-ts {
+                width: 50%
+            }
+            [class*=one-line] .column-tl {
+                width: 100%;
+                margin-left: 0
+            }
+            [class*=two-lines] .column-ts {
+                width: 50%
+            }
+            [class*=two-lines] .column-tl {
+                width: 100%;
+                margin-left: 0
+            }
+        }
+        
+        @media only screen and (min-width:1026px) and (max-width:1200px) {
+            [class*=two-lines] .column-text {
+                margin-left: -5%
+            }
+        }
+        
+        @media only screen and (max-width:640px) {
+            [class*=one-line] .column-ts {
+                width: 100%;
+                padding-bottom: 15px
+            }
+            [class*=one-line] .column-tl {
+                width: 100%
+            }
+            [class*=two-lines] .column-ts {
+                width: 100%;
+                padding-bottom: 15px
+            }
+            [class*=two-lines] .column-tl {
+                width: 100%
+            }
+        }
+        
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+        
+        * {
+            font-family: "Roboto", sans-serif;
+        }
+        
+        #target-element ul li:nth-child(n+6):not(.last) {
+            display: inherit;
+        }
+        /* Styles for the flex layout based tabs */
+        
+        amp-selector[role=tablist].tabs-with-flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        amp-selector[role=tablist].tabs-with-flex [role=tab] {
+            flex-grow: 1;
+            /* custom styling, feel free to change */
+            font-size: 18px;
+            color: rgb(220, 244, 232);
+            font-weight: 400;
+            min-width: 230px;
+            padding: 0px 0px 80px;
+            text-align: center;
+            margin-right: 20px;
+            transition: all 0.25s ease-in-out 0s;
+        }
+        
+        amp-selector[role=tablist].tabs-with-flex [role=tab]::before {
+            content: "";
+            position: relative;
+            width: 100%;
+            height: 2px;
+            top: 35px;
+            left: 0px;
+            display: block;
+            background: rgba(0, 0, 0, 0.08) none repeat scroll 0% 0%;
+        }
+        
+        amp-selector[role=tablist].tabs-with-flex [role=tab][selected]::after {
+            transform: scaleX(1);
+            transform-origin: left center 0px;
+            transition: transform 0.35s cubic-bezier(0.43, 0.49, 0.51, 0.68) 0s;
+            background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+            content: "";
+            position: relative;
+            width: 100%;
+            height: 2px;
+            top: 11px;
+            left: 0px;
+            display: block;
+        }
+        
+        amp-selector[role=tablist].tabs-with-flex [role=tab][selected] {
+            outline: none;
+            /* custom styling, feel free to change */
+            border-bottom: 2px solid var(--color-primary);
+        }
+        
+        amp-selector[role=tablist].tabs-with-flex [role=tabpanel] {
+            display: none;
+            width: 100%;
+            order: 1;
+            /* must be greater than the order of the tab buttons to flex to the next line */
+            /* custom styling, feel free to change */
+            padding: var(--space-4);
+        }
+        
+        amp-selector[role=tablist].tabs-with-flex [role=tab][selected]+[role=tabpanel] {
+            display: block;
+        }
+        /* Styles for the selector based tabs */
+        
+        amp-selector[role=tablist].tabs-with-selector {
+            display: flex;
+        }
+        
+        amp-selector[role=tablist].tabs-with-selector [role=tab][selected] {
+            outline: none;
+            /* custom styling, feel free to change */
+            border-bottom: 2px solid var(--color-primary);
+        }
+        
+        amp-selector[role=tablist].tabs-with-selector {
+            display: flex;
+        }
+        
+        amp-selector[role=tablist].tabs-with-selector [role=tab] {
+            /* custom styling, feel free to change */
+            width: 100%;
+            text-align: center;
+            padding: var(--space-1);
+        }
+        
+        amp-selector.tabpanels [role=tabpanel] {
+            display: none;
+            /* custom styling, feel free to change */
+            padding: var(--space-4);
+        }
+        
+        amp-selector.tabpanels [role=tabpanel][selected] {
+            outline: none;
+            display: block;
+        }
+        
+        amp-selector[role=tablist] [role=tab][selected]+[role=tabpanel] {
+            display: block;
+        }
+        /* Styles for the flex layout based tabs */
+        
+        amp-selector[role=tablist].tabs-price-flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        amp-selector[role=tablist].tabs-price-flex [role=tab] {
+            flex-grow: 1;
+            /* custom styling, feel free to change */
+            cursor: pointer;
+            display: inline-flex;
+            -moz-box-align: center;
+            align-items: center;
+            -moz-box-pack: center;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            background-color: rgb(42, 162, 117);
+            min-height: 46px;
+            min-width: 48px;
+            border-radius: 3px;
+            font-family: inherit;
+            font-size: 16px;
+            text-decoration: none;
+            margin-bottom: 40px;
+            text-transform: capitalize;
+            padding: 8px 15px;
+            transition: all 0.3s ease 0s;
+            box-sizing: border-box;
+            font-weight: 400;
+            color: rgb(111, 122, 135);
+            background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+            height: 50px;
+            width: 165px;
+            border: 1px solid rgb(228, 233, 238);
+        }
+        
+        amp-selector[role=tablist].tabs-price-flex [role=tab][selected] {
+            outline: none;
+            /* custom styling, feel free to change */
+            color: rgb(42, 162, 117);
+            border-color: rgb(42, 162, 117);
+        }
+        
+        amp-selector[role=tablist].tabs-price-flex [role=tabpanel] {
+            display: none;
+            width: 100%;
+            order: 1;
+            /* must be greater than the order of the tab buttons to flex to the next line */
+            /* custom styling, feel free to change */
+            padding: var(--space-4);
+        }
+        
+        amp-selector[role=tablist].tabs-price-flex [role=tab][selected]+[role=tabpanel] {
+            display: block;
+        }
+        /* Styles for the selector based tabs */
+        
+        amp-selector[role=tablist].tabs-price-selector {
+            display: flex;
+        }
+        
+        amp-selector[role=tablist].tabs-price-selector [role=tab][selected] {
+            outline: none;
+            /* custom styling, feel free to change */
+            border-bottom: 2px solid var(--color-primary);
+        }
+        
+        amp-selector[role=tablist].tabs-price-selector {
+            display: flex;
+        }
+        
+        amp-selector[role=tablist].tabs-price-selector [role=tab] {
+            /* custom styling, feel free to change */
+            width: 100%;
+            text-align: center;
+            padding: var(--space-1);
+        }
+        
+        amp-selector.tabpanels [role=tabpanel] {
+            display: none;
+            /* custom styling, feel free to change */
+            padding: var(--space-4);
+        }
+        
+        amp-selector.tabpanels [role=tabpanel][selected] {
+            outline: none;
+            display: block;
+        }
+        
+        .nav-stick {
+            background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+            box-shadow: rgba(43, 83, 135, 0.08) 0px 3px 8px 0px;
+            padding: 15px 0px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            transition: all 0.35s ease-in-out 0s;
+            position: fixed;
+            padding: 30px 0px;
+        }
+        
+        .nav-1 {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            transition: all 0.35s ease-in-out 0s;
+            padding: 30px 0px;
+        }
+        
+        .col-same-height {
+            float: none;
+            display: table-cell;
+            vertical-align: top;
+        }
+        
+        .nav-btn {
+            text-decoration: none;
+            cursor: pointer;
+            color: var(--navbar-tx-color);
+            padding: 10px;
+            font-size: 13px;
+            color: #fff;
+        }
+        
+        .nav-btn::hover {
+            color: rgb(237, 205, 55);
+        }
+        
+        .nav-btn-active {
+            color: rgb(237, 205, 55);
+        }
+        
+        .get-started {
+            cursor: pointer;
+            display: inline-flex;
+            -moz-box-align: center;
+            align-items: center;
+            -moz-box-pack: center;
+            justify-content: center;
+            min-width: 48px;
+            border-radius: 3px;
+            font-family: inherit;
+            font-weight: 500;
+            text-decoration: none;
+            text-transform: capitalize;
+            padding: 8px 15px;
+            border: 0px none rgb(237, 205, 55);
+            transition: all 0.3s ease 0s;
+            color: rgb(0, 0, 0);
+            background-color: rgb(237, 205, 55);
+            box-sizing: border-box;
+            height: 40px;
+            min-height: auto;
+            font-size: 13px;
+        }
+        
+        .get-started-text {
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 500;
+            text-transform: capitalize;
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+        
+        .logo-react {
+            display: block;
+            height: auto;
+            box-sizing: border-box;
+            margin: 0px;
+        }
+        
+        .discount {
+            font-family: "Open Sans", sans-serif;
+            display: inline-block;
+            border-radius: 4em;
+            padding: 9px 22px;
+            margin-bottom: 22px;
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+        
+        .discount-25 {
+            box-sizing: border-box;
+            margin-bottom: 0px;
+            margin-right: 0.4em;
+            margin-top: 0px;
+            font-size: 13px;
+            color: rgb(0, 134, 91);
+            font-weight: 700;
+        }
+        
+        .discount-text {
+            box-sizing: border-box;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            font-size: 13px;
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+        }
+        
+        .first-title {
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            margin-top: 0px;
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+            text-align: center;
+            line-height: 1.2;
+            letter-spacing: -0.025em;
+            width: 60%;
+        }
+        
+        .first-text {
+            box-sizing: border-box;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            line-height: 1.75;
+            width: 55%;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+        }
+        
+        .free-trial-btn {
+            cursor: pointer;
+            display: inline-flex;
+            -moz-box-align: center;
+            align-items: center;
+            -moz-box-pack: center;
+            justify-content: center;
+            border-radius: 3px;
+            font-family: inherit;
+            font-weight: 500;
+            text-decoration: none;
+            border: 0px none rgb(237, 205, 55);
+            transition: all 0.3s ease 0s;
+            color: rgb(0, 0, 0);
+            background-color: rgb(237, 205, 55);
+            box-sizing: border-box;
+            padding: 0px 15px;
+            min-width: auto;
+            height: 40px;
+            min-height: auto;
+            padding: 8px 22px;
+            min-width: 150px;
+            height: 46px;
+        }
+        
+        .watch-btn {
+            cursor: pointer;
+            display: inline-flex;
+            -moz-box-align: center;
+            align-items: center;
+            -moz-box-pack: center;
+            justify-content: center;
+            min-width: 48px;
+            border-radius: 3px;
+            font-family: inherit;
+            font-weight: 500;
+            text-decoration: none;
+            border: 0px none transparent;
+            transition: all 0.3s ease 0s;
+            background-color: transparent;
+            box-sizing: border-box;
+            padding: 0px 15px;
+            height: 40px;
+            min-height: auto;
+            color: rgb(255, 255, 255);
+        }
+        
+        .watch-btn::hover {
+            color: rgb(237, 205, 55);
+            border-color: transparent;
+            background-color: transparent;
+        }
+        
+        .white-helf-section {
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+            left: 0px;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        .white-helf-section svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .green-text {
+            box-sizing: border-box;
+            margin-bottom: 5px;
+            margin-top: 0px;
+            color: rgb(42, 162, 117);
+            display: block;
+            text-align: center;
+            letter-spacing: 0.15em;
+        }
+        
+        .feeature-title {
+            box-sizing: border-box;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            color: rgb(15, 33, 55);
+            text-align: center;
+            line-height: 1.67;
+            letter-spacing: -0.025em;
+        }
+        
+        .process-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            -moz-box-align: center;
+            align-items: center;
+            -moz-box-pack: center;
+            justify-content: center;
+            background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+            color: rgb(52, 61, 72);
+            font-size: 24px;
+            font-weight: 700;
+            box-shadow: rgba(42, 96, 151, 0.25) 0px 6px 10.34px 0.66px;
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            z-index: 1;
+        }
+        
+        .process-img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            margin: 0px 0px 35px;
+            width: 100px;
+        }
+        
+        .process-text {
+            box-sizing: border-box;
+            margin-bottom: 1rem;
+            margin-top: 0px;
+            color: rgb(52, 61, 72);
+            line-height: 1.87;
+        }
+        
+        .float-img {
+            position: absolute;
+            width: 400px;
+            top: 60%;
+            left: 50%;
+        }
+        
+        .website-title {
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            margin-top: 0px;
+            color: rgb(15, 33, 55);
+            line-height: 1.25;
+            letter-spacing: -0.025em;
+        }
+        
+        .website-text {
+            box-sizing: border-box;
+            margin-bottom: 33px;
+            margin-top: 0px;
+            color: rgba(52, 61, 72, 0.8);
+            line-height: 2;
+        }
+        
+        .tab-img {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: rgba(27, 67, 111, 0.15) 0px 5px 60px 0px;
+        }
+        
+        .plan-btn {
+            cursor: pointer;
+            display: inline-flex;
+            -moz-box-align: center;
+            align-items: center;
+            -moz-box-pack: center;
+            justify-content: center;
+            min-height: 46px;
+            min-width: 48px;
+            border-radius: 3px;
+            font-family: inherit;
+            font-weight: 500;
+            text-decoration: none;
+            text-transform: capitalize;
+            padding: 8px 10px;
+            transition: all 0.3s ease 0s;
+            background-color: rgb(42, 162, 117);
+            border: 1px solid;
+            box-sizing: border-box;
+            width: 200px;
+            max-width: 100%;
+            font-size: 14px;
+            color: rgb(255, 255, 255);
+        }
+        
+        .plan-card {
+            border: 1px solid rgb(242, 244, 247);
+            padding: 60px 45px;
+            border-radius: 5px;
+        }
+        
+        .plan-card i {
+            color: rgb(24, 211, 121);
+            margin-right: 10px;
+        }
+        
+        .plan-text {
+            box-sizing: border-box;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            font-size: 15px;
+            color: rgb(67, 65, 78);
+            text-align: center;
+            line-height: 1.75;
+        }
+        
+        .white {
+            color: #fff;
+        }
+        
+        .uppercase {
+            text-transform: uppercase;
+        }
+        
+        .f-14 {
+            font-size: 14px;
+        }
+        
+        .f-15 {
+            font-size: 15px;
+        }
+        
+        .f-16 {
+            font-size: 16px;
+        }
+        
+        .f-20 {
+            font-size: 20px;
+        }
+        
+        .f-22 {
+            font-size: 22px;
+        }
+        
+        .f-26 {
+            font-size: 26px;
+        }
+        
+        .f-28 {
+            font-size: 28px;
+        }
+        
+        .f-32 {
+            font-size: 32px;
+        }
+        
+        .f-40 {
+            font-size: 40px;
+        }
+        
+        .f-55 {
+            font-size: 55px;
+        }
+        
+        .fw-300 {
+            font-weight: 300;
+        }
+        
+        .fw-400 {
+            font-weight: 400;
+        }
+        
+        .fw-500 {
+            font-weight: 500;
+        }
+        
+        .fw-700 {
+            font-weight: 700;
+        }
+        
+        .p-0 {
+            padding: 0;
+        }
+        
+        .p-10 {
+            padding: 10px;
+        }
+        
+        .pl-5,
+        .px-5 {
+            padding-left: 5px;
+        }
+        
+        .pr-5,
+        .px-5 {
+            padding-right: 5px;
+        }
+        
+        .pt-100,
+        .py-100 {
+            padding-top: 100px;
+        }
+        
+        .m-0 {
+            margin: 0;
+        }
+        
+        .mt-15,
+        .my-15 {
+            margin-top: 15px;
+        }
+        
+        .mb-5,
+        .my-5 {
+            margin-bottom: 5px;
+        }
+        
+        .mb-15,
+        .my-15 {
+            margin-bottom: 15px;
+        }
+        
+        .mb-20,
+        .my-20 {
+            margin-bottom: 20px;
+        }
+        
+        .mt-40,
+        .my-40 {
+            margin-top: 40px;
+        }
+        
+        .mb-40,
+        .my-40 {
+            margin-bottom: 40px;
+        }
+        
+        .mb-50,
+        .my-50 {
+            margin-bottom: 50px;
+        }
+        
+        .mr-30,
+        .mx-30 {
+            margin-right: 30px;
+        }
+        
+        .mr-15,
+        .mx-15 {
+            margin-right: 15px;
+        }
+        
+        .mr-15,
+        .mx-15 {
+            margin-right: 15px;
+        }
+        
+        .mb-20,
+        .my-20 {
+            margin-bottom: 20px;
+        }
+        
+        .w-20 {
+            width: 20%;
+        }
+        
+        .w-40 {
+            width: 40%;
+        }
+        
+        .w-60 {
+            width: 60%;
+        }
+        
+        .w-80 {
+            width: 80%;
+        }
+        
+        .w-100 {
+            width: 100%;
+        }
+        
+        .w-px-130 {
+            width: 130px;
+        }
+        
+        .justify-content-center {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .align-content-center {
+            display: flex;
+            align-items: center;
+        }
+        
+        @media (min-width: 768px) and (max-width: 1024px) {
+            amp-selector[role=tablist].tabs-with-flex [role=tab] {
+                flex-grow: 1;
+                /* custom styling, feel free to change */
+                display: inline-block;
+                float: none;
+                min-width: auto;
+                padding: 0px 10px 30px;
+                font-size: 16px;
+                font-weight: 400;
+                text-align: center;
+                margin-right: 20px;
+                transition: all 0.25s ease-in-out 0s;
+            }
+            amp-selector[role=tablist].tabs-with-flex [role=tab][selected]::after {
+                top: 14px;
+            }
+            .f-md-14 {
+                font-size: 14px;
+            }
+            .f-md-15 {
+                font-size: 15px;
+            }
+            .f-md-22 {
+                font-size: 22px;
+            }
+            .f-md-35 {
+                font-size: 35px;
+            }
+            .f-md-40 {
+                font-size: 40px;
+            }
+            .w-md-90 {
+                width: 90%;
+            }
+            .col-md-4 {
+                width: 33.33%;
+            }
+            .col-md-6 {
+                width: 50%;
+            }
+            .process-icon {
+                width: 42px;
+                height: 42px;
+            }
+            .process-img {
+                width: 70px;
+            }
+            .float-img {
+                width: 250px;
+                top: 45%;
+                left: 40%;
+            }
+            .align-items-inhirit-md {
+                display: flex;
+                align-items: inherit;
+            }
+            .px-md-15,
+            .pl-md-15 {
+                padding-left: 15px;
+            }
+            .px-md-15,
+            .pr-md-15 {
+                padding-right: 15px;
+            }
+            .py-md-15,
+            .pt-md-15 {
+                padding-top: 15px;
+            }
+            .py-md-15,
+            .pb-md-15 {
+                padding-bottom: 15px;
+            }
+        }
+        
+        @media (min-width: 600px) and (max-width: 767px) {
+            amp-selector[role=tablist].tabs-with-flex [role=tab] {
+                flex-grow: 1;
+                /* custom styling, feel free to change */
+                font-size: 14px;
+                min-width: auto;
+                text-align: center;
+                margin-right: 20px;
+                transition: all 0.25s ease-in-out 0s;
+                font-weight: 400;
+                box-sizing: border-box;
+                position: relative;
+            }
+            amp-selector[role=tablist].tabs-with-flex [role=tab][selected]::after {
+                top: 15px;
+            }
+            .f-md-s-32 {
+                font-size: 32px;
+            }
+            .f-md-s-28 {
+                font-size: 28px;
+            }
+            .f-md-s-14 {
+                font-size: 14px;
+            }
+            .f-md-s-20 {
+                font-size: 20px;
+            }
+            .w-md-s-90 {
+                width: 90%;
+            }
+            .col-md-s-4 {
+                width: 33.33%;
+            }
+            .col-md-s-6 {
+                width: 50%;
+            }
+            .process-icon {
+                width: 42px;
+                height: 42px;
+            }
+            .process-img {
+                width: 70px;
+            }
+            .display-table-md-s {
+                display: table;
+            }
+            .float-img {
+                width: 300px;
+                top: 50%;
+                left: 55%;
+            }
+            .px-md-s-15,
+            .pl-md-s-15 {
+                padding-left: 15px;
+            }
+            .px-md-s-15,
+            .pr-md-s-15 {
+                padding-right: 15px;
+            }
+            .py-md-s-15,
+            .pt-md-s-15 {
+                padding-top: 15px;
+            }
+            .py-md-s-15,
+            .pb-md-s-15 {
+                padding-bottom: 15px;
+            }
+        }
+        
+        @media (min-width: 320px) and (max-width: 480px) {
+            amp-selector[role=tablist].tabs-with-flex [role=tab] {
+                flex-grow: 1;
+                /* custom styling, feel free to change */
+                font-size: 14px;
+                padding: 0px;
+                padding-bottom: 15px;
+                min-width: auto;
+                font-weight: 400;
+                text-align: center;
+                margin-right: 20px;
+                transition: all 0.25s ease-in-out 0s;
+                float: left;
+                height: 100%;
+                box-sizing: border-box;
+                position: relative;
+                display: block;
+                line-height: 1.5;
+                white-space: nowrap;
+            }
+            amp-selector[role=tablist].tabs-price-flex [role=tab] {
+                flex-grow: 1;
+                /* custom styling, feel free to change */
+                font-size: 14px;
+                height: 44px;
+                width: 120px;
+                padding: 0px 5px;
+            }
+            amp-selector[role=tablist].tabs-with-flex [role=tab]::before {
+                display: none;
+            }
+            amp-selector[role=tablist].tabs-with-flex [role=tab][selected]::after {
+                display: none;
+            }
+            .f-sm-11 {
+                font-size: 11px;
+            }
+            .f-sm-12 {
+                font-size: 12px;
+            }
+            .f-sm-14 {
+                font-size: 14px;
+            }
+            .f-sm-15 {
+                font-size: 15px;
+            }
+            .f-sm-20 {
+                font-size: 20px;
+            }
+            .f-sm-24 {
+                font-size: 24px;
+            }
+            .f-sm-26 {
+                font-size: 26px;
+            }
+            .w-sm-100 {
+                width: 100%;
+            }
+            .btn-sm {
+                padding: 0px 15px;
+                min-width: auto;
+                height: 40px;
+                min-height: auto;
+                font-size: 13px;
+            }
+            .nav-btn-active {
+                color: rgb(42, 162, 117);
+            }
+            #sidebar1 {
+                background: #fff;
+            }
+            #sidebar1 nav ul li a {
+                color: #000;
+                font-size: 15px;
+            }
+            #sidebar1 nav ul li a::before {
+                content: "";
+                width: 7px;
+                height: 7px;
+                background: rgb(42, 162, 117) none repeat scroll 0% 0%;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: -15px;
+                transform: translateY(-50%);
+                opacity: 0;
+            }
+            .process-icon {
+                width: 40px;
+                height: 40px;
+            }
+            .process-img {
+                width: 60px;
+            }
+            .display-table-sm {
+                display: table;
+            }
+            .float-img {
+                width: 200px;
+                top: 50%;
+                left: 45%;
+            }
+            .px-md-s-15,
+            .pl-md-s-15 {
+                padding-left: 15px;
+            }
+            .px-md-s-15,
+            .pr-md-s-15 {
+                padding-right: 15px;
+            }
+            .py-sm-15,
+            .pt-sm-15 {
+                padding-top: 15px;
+            }
+            .py-sm-15,
+            .pb-sm-15 {
+                padding-bottom: 15px;
+            }
+            .mr-sm-0,
+            .mx-sm-0 {
+                margin-right: 0;
+            }
+            .pt-sm-5,
+            .py-sm-5,
+            .p-sm-5 {
+                padding-top: 5px;
+            }
+            .pb-sm-5,
+            .py-sm-5,
+            .p-sm-5 {
+                padding-bottom: 5px;
+            }
+            .pl-sm-5,
+            .px-sm-5,
+            .p-sm-5 {
+                padding-left: 5px;
+            }
+            .pr-sm-5,
+            .px-sm-5,
+            .p-sm-5 {
+                padding-right: 5px;
+            }
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Anton&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Google amp-analytics -->
+    <amp-analytics type="gtag" data-credentials="include">
+        <script type="application/json">
+            {
+                "vars": {
+                    "gtag_id": "UA-00000000-1",
+                    "config": {
+                        "UA-00000000-1": {
+                            "groups": "default"
+                        }
+                    }
+                }
+            }
+        </script>
+    </amp-analytics>
+
+    <div id="top-page"></div>
+
+    <amp-animation id="showAnim" layout="nodisplay">
+        <script type="application/json">
+            {
+                "duration": "200ms",
+                "fill": "both",
+                "iterations": "1",
+                "direction": "alternate",
+                "animations": [{
+                    "selector": "#scrollToTopButton",
+                    "keyframes": [{
+                        "opacity": "1",
+                        "visibility": "visible"
+                    }]
+                }]
+            }
+        </script>
+    </amp-animation>
+    <!-- ... and the second one is for adding the button.-->
+    <amp-animation id="hideAnim" layout="nodisplay">
+        <script type="application/json">
+            {
+                "duration": "200ms",
+                "fill": "both",
+                "iterations": "1",
+                "direction": "alternate",
+                "animations": [{
+                    "selector": "#scrollToTopButton",
+                    "keyframes": [{
+                        "opacity": "0",
+                        "visibility": "hidden"
+                    }]
+                }]
+            }
+        </script>
+    </amp-animation>
+    <!-- We use `amp-position-observer` to start the animation when the user starts to scroll. -->
+    <div id="marker">
+        <amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay">
+        </amp-position-observer>
+    </div>
+
+    <div style="background-color: rgb(52, 66, 87); margin: 0px;display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-8" style="margin-left:-15px;">
+                    <p style="font-size: 13px; margin: 0px; color: rgb(255, 255, 255);font-family: Open Sans, sans-serif;font-weight:300 " class="display-text-4">The best place to eat in downtown Porto!</p>
+                </div>
+                <div class="col-4" style>
+                    <a href="#" style="text-decoration:none;color:#fff;font-size: 13px;font-family: Open Sans, sans-serif;font-weight:300;float:right; " aria-label="youtube"><i class="fas fa-phone-square" style="font-size: 13px; color: rgb(223, 155, 34); margin-right: 10px;">
+                        </i>123-456-7890
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <amp-sidebar id="sidebar1" layout="nodisplay" side="right" class="shadow">
+        <button style="background:transparent; border:none;font-size:30px;width: 30px;height: 30px; position:absolute; padding:0; top:6px; left:6px;color:var(--navbar-tx-color);" on="tap:sidebar1.close">&#x2715;</button>
+        <nav toolbar="(min-width: 767px)" toolbar-target="target-element" style="overflow: hidden;padding: 0;">
+            <ul style="list-style: none; padding:0; position:relative; z-index:2;">
+                <li><a class="nav-btn nav-btn-active f-16 fw-300">Home</a></li>
+                <li><a class="nav-btn f-16 fw-300">Menu</a></li>
+                <li><a class="nav-btn f-16 fw-300">About</a></li>
+                <li><a class="nav-btn f-16 fw-300">Press</a></li>
+                <li><a class="nav-btn f-16 fw-300">Contact</a></li>
+                <li><a class="btn get-started"><span class="get-started-text px-5">Get Started</span></a></li>
+            </ul>
+        </nav>
+    </amp-sidebar>
+
+    <header class="nav-stick nav-1" style="background-color:#5ec196; padding:15px 5%;">
+        <div class="row navrow container" style="position:relative;">
+            <a href="/" class="logo logo-img" style=" display:flex; font-size:25px;">
+                <span style="color:var(--navbar-tx-color)">MOURCHID MED Kamal.</span>
+                <amp-img src="data/logo-b73048211d7a9a05b4c449061f130c5f.png" width="200" height="50" layout="intrinsic" class="cover" alt="logo"></amp-img>
+            </a>
+            <div class="col-12" id="target-element" style="padding:0;">
+            </div>
+            <button on="tap:sidebar1.toggle" class="hamburger" style="background-color: transparent; font-size:2rem;color:var(--navbar-tx-color);" aria-label="menu"></button>
+        </div>
+    </header>
+
+    <section class="parallax pt-100" style="background-image:  url('data/banner-texture-bbd8b16f6fedd2a04de59b17f6868b24.png'), linear-gradient(35deg, rgb(147, 249, 185) 0%, rgb(29, 151, 108) 100%); background-repeat: no-repeat; background-size: cover; background-position: center top; min-height: 45vh; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;"
+        id="1575167007267">
+        <div class="white-helf-section">
+            <svg width="1920" height="500" viewBox="0 0 1920 500"><defs><clipPath><rect width="1920" height="500"></rect></clipPath></defs><g data-name="Shape"><rect data-name="Rectangle 134" width="2356" height="781" transform="translate(-136.868 401.948) rotate(-11)" fill="#fff"></rect></g></svg>
+        </div>
+        <div class="container">
+            <div class="row " style="display:flex; flex-wrap: wrap; ">
+                <div class="col-12 center">
+                    <div class="discount">
+                        <span class="discount-25 f-sm-11">25% Save</span>
+                        <span class="discount-text f-sm-11">for first month trail version</span>
+                    </div>
+                    <h1 class="first-title f-sm-24 w-sm-100 w-md-90 w-md-s-90 f-md-40 f-md-s-32">Ultimate Platform to monitor your best workflow.</h1>
+                    <p class="first-text f-sm-14  w-sm-100 w-md-90 w-md-s-90">For Enhanced performance we use LiteSpeed Web Server, HTTP/2, PHP7. We make your website faster, which will help you to increase search ranking!</p>
+                    <div class="my-40">
+                        <a class="btn free-trial-btn uppercase f-14 btn-sm">Free Trial</a>
+                        <a class="btn watch-btn uppercase f-14 btn-sm"><i class="far fa-play-circle white f-14 pr-5"></i> Watch Video</a>
+                    </div>
+                    <amp-img amp-fx="fade-in" src="data/banner-image.png" layout="responsive" alt="" width="800" height="400"></amp-img>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="pad70-0" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), url(''); background-repeat: no-repeat; background-position: center center; background-size: cover; color: var(--main-tx-color-1);" id="1575155163685">
+        <div class="container">
+            <div class="row mb-50">
+                <div class="col-12 center">
+                    <p class="green-text f-14 fw-700">WORKING PROCESS</p>
+                    <h2 class="feeature-title f-22 fw-500 f-sm-20">Our Featured Service that We Provide</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 col-md-4 col-md-s-4">
+                    <div style="position: relative;">
+                        <span class="process-icon">1</span>
+                        <amp-img amp-fx="fade-in" src="data/process-1-bf1eec0914f79a8d571044e417937af7.svg" layout="responsive" alt="" width="50" height="50" class="process-img"></amp-img>
+                        <h4 class="f-20 my-15">Download our app</h4>
+                        <p class="process-text f-15 fw-400">Get your blood tests delivered at home collect a sample from the news Get your blood tests delivered with terms.</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4 col-md-s-4">
+                    <div style="position: relative;">
+                        <span class="process-icon">2</span>
+                        <amp-img amp-fx="fade-in" src="data/process-2-cacbed52ff11bba3bf8e79f41f1d58ad.svg" layout="responsive" alt="" width="50" height="50" class="process-img"></amp-img>
+                        <h4 class="f-20 my-15">Create a free account</h4>
+                        <p class="process-text f-15 fw-400">Get your blood tests delivered at home collect a sample from the news Get your blood tests delivered with terms.</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4 col-md-s-4">
+                    <div style="position: relative;">
+                        <span class="process-icon">3</span>
+                        <amp-img amp-fx="fade-in" src="data/process-3-527de7a9522cba03116a0cb42593e09e.svg" layout="responsive" alt="" width="50" height="50" class="process-img"></amp-img>
+                        <h4 class="f-20 my-15">Now Start your journey</h4>
+                        <p class="process-text f-15 fw-400">Get your blood tests delivered at home collect a sample from the news Get your blood tests delivered with terms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pad70-0" style="background-image: linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0)), url('data/dash-bg-afcfdf67764813472be185c43c6e7e39.png'); background-repeat: no-repeat; background-position: left bottom;background-size: contain;">
+        <div class="container-fluid p-0 px-md-15 px-md-s-15 px-sm-15">
+            <div class="row align-content-center display-table-sm display-table-md-s">
+                <div class="col-7 col-md-6 p-0" style="position: relative;">
+                    <amp-img amp-fx="fade-in" src="data/dash-1-33d7b5907982197e2249ad793677721b.png" layout="intrinsic" alt="" width="900" height="650"></amp-img>
+                    <amp-img amp-fx="fade-in" src="data/dash-2-6744d67869d29ec2c83610877d32a646.png" layout="intrinsic" alt="" width="500" height="400" class="float-img"></amp-img>
+                </div>
+                <div class="col-4 col-md-6 align-content-center align-items-inhirit-md">
+                    <div>
+                        <h3 class="website-title f-55 fw-400 f-sm-26 f-md-35 f-md-s-28">Make your website growth with next level visitors</h3>
+                        <p class="website-text f-15 f-sm-15 f-md-14 f-md-s-14">For Enhanced performance we use LiteSpeed Web Server, HTTP/2, PHP7. We make your website faster, which will help you to increase search ranking!.</p>
+                        <a class="btn free-trial-btn uppercase f-14 btn-sm">How it works</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pad70-0" style="background-image: linear-gradient(rgb(255, 255, 255, 1), rgb(255, 255, 255, 1)), url('data/dash-bg-afcfdf67764813472be185c43c6e7e39.png'); background-repeat: no-repeat; background-position: left bottom;background-size: contain;">
+        <div class="container">
+            <div class="row mb-50">
+                <div class="col-12 center">
+                    <p class="green-text f-14 fw-700">FEATURES</p>
+                    <h2 class="feeature-title f-22 fw-500 f-sm-20">Why you choose Our Plugin</h2>
+                </div>
+            </div>
+
+            <div class="row mb-20">
+                <div class="col-4 col-md-s-6 col-md-6 p-sm-5 align-content-center">
+                    <div class="w-px-130 mr-30 mr-sm-0 mb-50">
+                        <amp-img amp-fx="fade-in" src="data/icon-1-8ba969aefbab89398e7d65975e8156a1.png" layout="intrinsic" alt="" width="50" height="55"></amp-img>
+                    </div>
+                    <div class="">
+                        <h4 class="f-20 mb-15 fw-300">App Development</h4>
+                        <p class="website-text f-15 f-sm-15 f-md-14 f-md-s-14">Get your proof tests delivered home collect a sample from the news get design.</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-s-6 col-md-6 p-sm-5 align-content-center">
+                    <div class="w-px-130 mr-30 mr-sm-0 mb-50">
+                        <amp-img amp-fx="fade-in" src="data/icon-2-45a6032e38c6bf9432caf58a8cef9ac3.png" layout="intrinsic" alt="" width="50" height="55"></amp-img>
+                    </div>
+                    <div class="">
+                        <h4 class="f-20 mb-15 fw-300">10 Times Award</h4>
+                        <p class="website-text f-15 f-sm-15 f-md-14 f-md-s-14">Get your proof tests delivered home collect a sample from the news get design.</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-s-6 col-md-6 p-sm-5 align-content-center">
+                    <div class="w-px-130 mr-30 mr-sm-0 mb-50">
+                        <amp-img amp-fx="fade-in" src="data/icon-3-5c2cf18dea382e8941b86c4dfdd8db97.png" layout="intrinsic" alt="" width="50" height="55"></amp-img>
+                    </div>
+                    <div class="">
+                        <h4 class="f-20 mb-15 fw-300">Cloud Storage</h4>
+                        <p class="website-text f-15 f-sm-15 f-md-14 f-md-s-14">Get your proof tests delivered home collect a sample from the news get design.</p>
+                    </div>
+                </div>
+
+                <div class="col-4 col-md-s-6 col-md-6 p-sm-5 align-content-center">
+                    <div class="w-px-130 mr-30 mr-sm-0 mb-50">
+                        <amp-img amp-fx="fade-in" src="data/icon-4-8ea6d27de4ef978e976fb35cdd3adf7a.png" layout="intrinsic" alt="" width="50" height="55"></amp-img>
+                    </div>
+                    <div class="">
+                        <h4 class="f-20 mb-15 fw-300">Customization</h4>
+                        <p class="website-text f-15 f-sm-15 f-md-14 f-md-s-14">Get your proof tests delivered home collect a sample from the news get design.</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-s-6 col-md-6 p-sm-5 align-content-center">
+                    <div class="w-px-130 mr-30 mr-sm-0 mb-50">
+                        <amp-img amp-fx="fade-in" src="data/icon-5-9f491b6a5c4aa601db363f1898d55115.png" layout="intrinsic" alt="" width="50" height="55"></amp-img>
+                    </div>
+                    <div class="">
+                        <h4 class="f-20 mb-15 fw-300">UX Planning</h4>
+                        <p class="website-text f-15 f-sm-15 f-md-14 f-md-s-14">Get your proof tests delivered home collect a sample from the news get design.</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-s-6 col-md-6 p-sm-5 align-content-center">
+                    <div class="w-px-130 mr-30 mr-sm-0 mb-50">
+                        <amp-img amp-fx="fade-in" src="data/icon-6-03e0927a30e3fc188fbf88843c8c4265.png" layout="intrinsic" alt="" width="50" height="55"></amp-img>
+                    </div>
+                    <div class="">
+                        <h4 class="f-20 mb-15 fw-300">Customer Support</h4>
+                        <p class="website-text f-15 f-sm-15 f-md-14 f-md-s-14">Get your proof tests delivered home collect a sample from the news get design.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="pad70-0" style="background-image: linear-gradient(35deg, rgb(147, 249, 185) 0%, rgb(29, 151, 108) 100%), url('data/dash-bg-afcfdf67764813472be185c43c6e7e39.png'); background-repeat: no-repeat; background-position: left bottom;background-size: contain;">
+        <div class="white-helf-section">
+            <svg width="1920" height="500" viewBox="0 0 1920 500"><defs><clipPath><rect width="1920" height="500"></rect></clipPath></defs><g data-name="Shape"><rect data-name="Rectangle 134" width="2356" height="781" transform="translate(-136.868 401.948) rotate(-11)" fill="#fff"></rect></g></svg>
+        </div>
+        <div class="container">
+            <div class="row mb-50">
+                <div class="col-12 center">
+                    <p class="green-text f-14 fw-700 white">UPDATE</p>
+                    <h2 class="feeature-title f-22 fw-500 f-sm-20 white">Meet our new updated screen</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <amp-selector class="tabs-with-flex" role="tablist">
+                        <div id="tab1" role="tab" aria-controls="tabpanel1" option selected class="f-15 tab-head"><i class="fas fa-dollar-sign white f-16"> </i> Budget Overview</div>
+                        <div id="tabpanel1" role="tabpanel" aria-labelledby="tab1">
+                            <amp-img amp-fx="fade-in" src="data/dash-4-8b5f72e5cc98ea1c378efad7714e38f5.png" layout="responsive" alt="" width="800" height="550" class="tab-img"></amp-img>
+                        </div>
+                        <div id="tab2" role="tab" aria-controls="tabpanel2" option class="f-15 tab-head"><i class="fas fa-cog white f-16"></i> Create & Adjust</div>
+                        <div id="tabpanel2" role="tabpanel" aria-labelledby="tab2">
+                            <amp-img src="data/dash-3-84993ccdb4a4e450944ece75a8cbff9f.png" layout="responsive" alt="" width="800" height="550" class="tab-img"></amp-img>
+                        </div>
+                        <div id="tab3" role="tab" aria-controls="tabpanel3" option class="f-15 tab-head"><i class="fas fa-chart-pie white f-16"> </i> View Reports</div>
+                        <div id="tabpanel3" role="tabpanel" aria-labelledby="tab3">
+                            <amp-img src="data/dash-4-8b5f72e5cc98ea1c378efad7714e38f5.png" layout="responsive" alt="" width="800" height="550" class="tab-img"></amp-img>
+                        </div>
+                        <div id="tab4" role="tab" aria-controls="tabpanel4" option class="f-15 tab-head"><i class="fas fa-briefcase white f-16"> </i> Integrations</div>
+                        <div id="tabpanel4" role="tabpanel" aria-labelledby="tab4">
+                            <amp-img src="data/dash-3-84993ccdb4a4e450944ece75a8cbff9f.png" layout="responsive" alt="" width="800" height="550" class="tab-img"></amp-img>
+                        </div>
+                    </amp-selector>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pad70-0" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), url(''); background-repeat: no-repeat; background-position: center center; background-size: cover; color: var(--main-tx-color-1);" id="1575155163685">
+        <div class="container">
+            <div class="row mb-50">
+                <div class="col-12 center">
+                    <p class="green-text f-14 fw-700">PRICING PLAN</p>
+                    <h2 class="feeature-title f-22 fw-500 f-sm-20">What’s our monthly pricing subscription</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <amp-selector class="tabs-price-flex" role="tablist">
+                        <div id="tab1" role="tab" aria-controls="tabpanel1" option selected>Monthly Plan</div>
+                        <div id="tabpanel1" role="tabpanel" aria-labelledby="tab1">
+                            <div class="row">
+                                <div class="col-4 col-md-6 col-md-s-6 center">
+                                    <div class="plan-card">
+                                        <div class="mb-20">
+                                            <h3 class="f-28 mb-5 fw-600 f-sm-20 f-md-22 f-md-s-20">Basic Account</h3>
+                                            <p class="plan-text f-sm-12 f-md-15 f-md-s-14">For Small teams or group who need to build website</p>
+                                        </div>
+
+                                        <div class="mb-20">
+                                            <h3 class="f-40 fw-300">$0</h3>
+                                            <p class="website-text f-15">Only for first month</p>
+                                        </div>
+                                        <div class="mb-40">
+                                            <a class="btn plan-btn uppercase f-14 btn-sm">Create Free Account</a>
+                                        </div>
+
+                                        <div class="left">
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>Drap & Drop Builder</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>1,000s of Templates Ready</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>Blog Tools</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>eCommerce Store</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>30+ Webmaster Tools</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-4 col-md-6 col-md-s-6 center ">
+                                    <div class="plan-card">
+                                        <div class="mb-20">
+                                            <h3 class="f-28 mb-5 fw-600 f-sm-20 f-md-22 f-md-s-20">Business Account</h3>
+                                            <p class="plan-text f-sm-12 f-md-15 f-md-s-14">For Mediums teams or group who need to build website</p>
+                                        </div>
+
+                                        <div class="mb-20">
+                                            <h3 class="f-40 fw-300">$9.87</h3>
+                                            <p class="website-text f-15">Per month & subscription yearly</p>
+                                        </div>
+                                        <div class="mb-40">
+                                            <a class="btn plan-btn uppercase f-14 btn-sm">Start free trial</a>
+                                        </div>
+
+                                        <div class="left">
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>Drap & Drop Builder</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>1,000s of Templates Ready</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>Blog Tools</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>eCommerce Store</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>50+ Webmaster Tools</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-4 col-md-6 col-md-s-6 center">
+                                    <div class="plan-card">
+                                        <div class="mb-20">
+                                            <h3 class="f-28 mb-5 fw-600 f-sm-20 f-md-22 f-md-s-20">Premium Account</h3>
+                                            <p class="plan-text f-sm-12 f-md-15 f-md-s-14">For Large teams of group who need to build website</p>
+                                        </div>
+
+                                        <div class="mb-20">
+                                            <h3 class="f-40 fw-300">$12.98</h3>
+                                            <p class="website-text f-15">Per month & subscription yearly</p>
+                                        </div>
+                                        <div class="mb-40">
+                                            <a class="btn plan-btn uppercase f-14 btn-sm">Start free trial</a>
+                                        </div>
+
+                                        <div class="left">
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>Drap & Drop Builder</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>1,000s of Templates Ready</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>Blog Tools</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>eCommerce Store</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>80+ Webmaster Tools</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tab2" role="tab" aria-controls="tabpanel2" option>Annual Plan</div>
+                        <div id="tabpanel2" role="tabpanel" aria-labelledby="tab2">
+
+                            <div class="row">
+                                <div class="col-4 col-md-6 col-md-s-6 center">
+                                    <div class="plan-card">
+                                        <div class="mb-20">
+                                            <h3 class="f-28 mb-5 fw-600 f-sm-20 f-md-22 f-md-s-20">Basic Account</h3>
+                                            <p class="plan-text f-sm-12 f-md-15 f-md-s-14">For a single client or team who need to build website</p>
+                                        </div>
+
+                                        <div class="mb-20">
+                                            <h3 class="f-40 fw-300">$0</h3>
+                                            <p class="website-text f-15">Only for first month</p>
+                                        </div>
+                                        <div class="mb-40">
+                                            <a class="btn plan-btn uppercase f-14 btn-sm">Create Free Account</a>
+                                        </div>
+
+                                        <div class="left">
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>Drap & Drop Builder</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>1,000s of Templates Ready</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>Blog Tools</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>eCommerce Store</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>30+ Webmaster Tools</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-4 col-md-6 col-md-s-6 center ">
+                                    <div class="plan-card">
+                                        <div class="mb-20">
+                                            <h3 class="f-28 mb-5 fw-600 f-sm-20 f-md-22 f-md-s-20">Business Account</h3>
+                                            <p class="plan-text f-sm-12 f-md-15 f-md-s-14">For Small teams or group who need to build website</p>
+                                        </div>
+
+                                        <div class="mb-20">
+                                            <h3 class="f-40 fw-300">$6.00</h3>
+                                            <p class="website-text f-15">Per month & subscription yearly</p>
+                                        </div>
+                                        <div class="mb-40">
+                                            <a class="btn plan-btn uppercase f-14 btn-sm">Start free trial</a>
+                                        </div>
+
+                                        <div class="left">
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>Drap & Drop Builder</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>1,000s of Templates Ready</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>Blog Tools</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>eCommerce Store</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>50+ Webmaster Tools</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-4 col-md-6 col-md-s-6 center">
+                                    <div class="plan-card">
+                                        <div class="mb-20">
+                                            <h3 class="f-28 mb-5 fw-600 f-sm-20 f-md-22 f-md-s-20">Premium Account</h3>
+                                            <p class="plan-text f-sm-12 f-md-15 f-md-s-14">For Large teams of group who need to build website</p>
+                                        </div>
+
+                                        <div class="mb-20">
+                                            <h3 class="f-40 fw-300">$9.99</h3>
+                                            <p class="website-text f-15">Per month & subscription yearly</p>
+                                        </div>
+                                        <div class="mb-40">
+                                            <a class="btn plan-btn uppercase f-14 btn-sm">Start free trial</a>
+                                        </div>
+
+                                        <div class="left">
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>Drap & Drop Builder</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>1,000s of Templates Ready</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>Blog Tools</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>eCommerce Store</p>
+                                            <p class="website-text f-15 mb-5 p-0"><i class="fas fa-check"> </i>80+ Webmaster Tools</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </amp-selector>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

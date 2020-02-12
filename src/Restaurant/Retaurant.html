@@ -1,0 +1,2585 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="author" content="MOURCHID Mohamed">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/favicon.png">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+
+    <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+    <script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script>
+    <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+    <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+        
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+    <title>Build amazing User-First experiences across all devices</title>
+    <meta name="description" content="">
+    <link rel="canonical" href="https://example.com/">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|roboto|Anton&amp;display=swap" rel="stylesheet">
+
+    <style amp-custom>
+        body {
+            --main-color-1: #343a40;
+            --main-bg-color: #fff;
+            --main-tx-color-1: #343a40;
+            --white-color: rgba(255, 0, 0, 0.5);
+            --navbar-bg-color: #ffffffFF;
+            --navbar-tx-color: #343a40;
+            --footer-bg-color: #ffffffFF;
+            --footer-tx-color: #343a40;
+            --title-font: 'Julius Sans One', sans-serif;
+            --text-font: 'roboto', sans-serif;
+            --main-btn-radius: 30px;
+            --title-1-desktop: 43 Julius Sans Onepx 'Undefined', sans-serif;
+            --title-1-mobile: 35 Julius Sans Onepx 'Undefined', sans-serif;
+            --title-2-desktop: 44Julius Sans Onepx 'Anton', sans-serif;
+            --title-2-mobile: 28 Julius Sans Onepx 'Anton', sans-serif;
+            --title-3-desktop: 31 Julius Sans Onepx 'Undefined', sans-serif;
+            --title-3-mobile: 27 Julius Sans Onepx 'Undefined', sans-serif;
+            --title-4-desktop: 25 Julius Sans Onepx 'Undefined', sans-serif;
+            --title-4-mobile: 18 Julius Sans Onepx 'Undefined', sans-serif;
+            --text-1-desktop: 24 robotopx 'Undefined', sans-serif;
+            --text-1-mobile: 23 robotopx 'Undefined', sans-serif;
+            --text-2-desktop: 21 robotopx 'Undefined', sans-serif;
+            --text-2-mobile: 21 robotopx 'Undefined', sans-serif;
+            --text-3-desktop: 18 robotopx 'Undefined', sans-serif;
+            --text-3-mobile: 18 robotopx 'Undefined', sans-serif;
+            --text-4-desktop: 12 robotopx 'Roboto', sans-serif;
+            --text-4-mobile: 13 robotopx 'Roboto', sans-serif;
+            font-size: 1.0625rem;
+            position: relative
+        }
+        
+        .display-title-2 {
+            font: var(--title-2-desktop)
+        }
+        
+        .display-title-3 {
+            font: var(--title-3-desktop)
+        }
+        
+        .display-title-4 {
+            font: var(--title-4-desktop)
+        }
+        
+        .display-text-1 {
+            font: var(--text-1-desktop)
+        }
+        
+        .display-text-2 {
+            font: var(--text-2-desktop)
+        }
+        
+        .display-text-3 {
+            font: var(--text-3-desktop)
+        }
+        
+        .display-text-4 {
+            font: var(--text-4-desktop)
+        }
+        
+        @media (max-width:768px) {
+            .display-title-1 {
+                font: var(--title-1-mobile)
+            }
+            .display-title-2 {
+                font: var(--title-2-mobile)
+            }
+            .display-title-3 {
+                font: var(--title-3-mobile)
+            }
+            .display-title-4 {
+                font: var(--title-4-mobile)
+            }
+            .display-text-1 {
+                font: var(--text-1-mobile)
+            }
+            .display-text-2 {
+                font: var(--text-2-mobile)
+            }
+            .display-text-3 {
+                font: var(--text-3-mobile)
+            }
+            .display-text-4 {
+                font: var(--text-4-mobile)
+            }
+        }
+        
+        .btn {
+            display: inline-block;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 13px;
+            transition: all .2s ease-in-out;
+            border: 0 solid #fff;
+            padding: 10px 40px;
+            min-width: 120px
+        }
+        
+        .btn-1,
+        .btn-2,
+        .btn-3 {
+            border-radius: var(--main-btn-radius)
+        }
+        
+        .btn-1 {
+            border: 0;
+            color: #fff;
+            letter-spacing: 3px;
+            background-color: var(--main-color-1)
+        }
+        
+        .btn-2,
+        .btn-3 {
+            border: 2px solid var(--main-color-1);
+            background-color: var(--main-tx-color-1);
+            color: var(--main-color-1)
+        }
+        
+        .btn-3 {
+            border: 1px solid var(--main-tx-color-1);
+            letter-spacing: 3px
+        }
+        
+        .btn-4 {
+            border: .1rem solid;
+            border-radius: 1px;
+            display: inline-flex;
+            align-items: center;
+            overflow: hidden
+        }
+        
+        .btn-4::after,
+        .btn-5::after {
+            content: "→";
+            font-size: 25px;
+            position: relative;
+            left: 8px;
+            align-self: center;
+            top: auto;
+            bottom: auto
+        }
+        
+        .btn-5::after {
+            content: " ";
+            opacity: 0;
+            left: 20px
+        }
+        
+        .btn-4:hover {
+            transform: translate(10px, 0)
+        }
+        
+        .btn-4,
+        .btn-5,
+        .btn-6 {
+            position: relative;
+            padding: 10px 20px
+        }
+        
+        .btn-4:hover,
+        .btn-5,
+        .btn-5:hover::after {
+            transition: all .3s ease-in-out
+        }
+        
+        .btn-5 {
+            border: .1rem solid;
+            border-radius: 1px;
+            display: inline-flex;
+            align-items: center;
+            overflow: hidden
+        }
+        
+        .btn-5:hover::after {
+            opacity: 1;
+            left: 8px;
+            content: "→"
+        }
+        
+        .btn-6 {
+            transition: .5s;
+            -webkit-transition: .5s;
+            box-sizing: border-box
+        }
+        
+        .btn-6,
+        .btn-6:hover {
+            border: 0
+        }
+        
+        .btn-6::after,
+        .btn-6::before {
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scale(0);
+            -webkit-transform: scale(0);
+            transition: .4s all ease-in-out
+        }
+        
+        .btn-6:hover::after,
+        .btn-6:hover::before {
+            -webkit-transform: scale(1);
+            transform: scale(1)
+        }
+        
+        .btn-6::before {
+            border-bottom: 2px solid;
+            border-left: 2px solid;
+            border-radius: inherit;
+            transform-origin: 0 100%;
+            -webkit-transform-origin: 0 100%
+        }
+        
+        .btn-6::after {
+            border-top: 2px solid;
+            border-right: 2px solid;
+            border-radius: inherit;
+            transform-origin: 100% 0;
+            -webkit-transform-origin: 100% 0
+        }
+        
+        .center {
+            text-align: center
+        }
+        
+        .left {
+            text-align: left
+        }
+        
+        .right {
+            text-align: right
+        }
+        
+        .cover img {
+            object-fit: cover
+        }
+        
+        .cover {
+            background-size: cover;
+            background-repeat: no-repeat
+        }
+        
+        @media only screen and (max-width:600px) {
+            .hideonmobile {
+                display: none
+            }
+        }
+        
+        .inner_ul_abso,
+        li.drop:hover ul {
+            position: absolute;
+            z-index: 999;
+            background-color: #fff
+        }
+        
+        .inner_ul_abso {
+            width: 188px;
+            margin-top: 13px;
+            padding-bottom: 20px;
+            display: none
+        }
+        
+        .inner_ul_abso li {
+            margin-left: -25px;
+            list-style-type: none
+        }
+        
+        li.drop:hover ul {
+            display: block;
+            top: 64px;
+            padding: 10px;
+            list-style: none
+        }
+        
+        .inner_ul_abso a {
+            color: #333;
+            padding-right: 5px;
+            padding-left: 5px
+        }
+        
+        .inner_ul_abso a:hover {
+            background-color: gray;
+            color: #fff;
+            cursor: pointer
+        }
+        
+        * {
+            box-sizing: border-box
+        }
+        
+        .col-1 {
+            width: 8.33%
+        }
+        
+        .col-2 {
+            width: 16.66%
+        }
+        
+        .col-3 {
+            width: 25%
+        }
+        
+        .col-4 {
+            width: 33.33%
+        }
+        
+        .col-5 {
+            width: 41.66%
+        }
+        
+        .col-6 {
+            width: 50%
+        }
+        
+        .col-7 {
+            width: 58.33%
+        }
+        
+        .col-8 {
+            width: 66.66%
+        }
+        
+        .col-9 {
+            width: 75%
+        }
+        
+        .col-10 {
+            width: 83.33%
+        }
+        
+        .col-11 {
+            width: 91.66%
+        }
+        
+        .col-12 {
+            width: 100%
+        }
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table
+        }
+        
+        [class*=col-] {
+            float: left;
+            padding: 15px
+        }
+        
+        .inner_ul_abso li:first-child {
+            padding-top: 13px
+        }
+        
+        @media only screen and (max-width:768px) {
+            .col-1,
+            .col-10,
+            .col-11,
+            .col-2,
+            .col-3,
+            .col-4,
+            .col-5,
+            .col-6,
+            .col-7,
+            .col-8,
+            .col-9 {
+                width: 100%
+            }
+        }
+        
+        .container {
+            padding: 0 15px;
+            margin-right: auto;
+            margin-left: auto
+        }
+        
+        .no-container {
+            padding: 10px 5%
+        }
+        
+        @media (min-width:768px) {
+            .container {
+                width: 750px
+            }
+        }
+        
+        @media (min-width:992px) {
+            .container {
+                width: 970px
+            }
+        }
+        
+        @media (min-width:1200px) {
+            .container {
+                width: 1170px
+            }
+        }
+        
+        .pad10 {
+            padding: 10px
+        }
+        
+        .pad20 {
+            padding: 20px
+        }
+        
+        .padT10 {
+            padding-top: 10px
+        }
+        
+        .padT20 {
+            padding-top: 20px
+        }
+        
+        .padT30 {
+            padding-top: 30px
+        }
+        
+        .padB20 {
+            padding-bottom: 20px
+        }
+        
+        .padB30 {
+            padding-bottom: 30px
+        }
+        
+        .pad50 {
+            padding: 50px 0
+        }
+        
+        .pad70-0 {
+            padding: 70px 0
+        }
+        
+        .pad70 {
+            padding: 70px
+        }
+        
+        .pad70-20 {
+            padding: 70px 20px
+        }
+        
+        .padT50 {
+            padding-top: 50px
+        }
+        
+        .padL20 {
+            padding-left: 20px;
+            padding-bottom: 10px
+        }
+        
+        .mar0 {
+            margin: 0
+        }
+        
+        button#scrollToTopButton {
+            color: #fafafa;
+            box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, .12), 0 1px 1px 0 rgba(0, 0, 0, .24);
+            width: 62px;
+            height: 64px;
+            border-radius: 0;
+            background-color: rgba(0, 0, 0, .5);
+            z-index: 9999;
+            bottom: 20px;
+            right: 10px;
+            position: fixed;
+            opacity: 0;
+            visibility: hidden;
+            line-height: 30px;
+            padding-top: 10px;
+            font-size: 32px;
+            outline: 0;
+            border: 0
+        }
+        
+        #marker {
+            position: absolute;
+            top: 100px;
+            width: 0;
+            height: 0
+        }
+        
+        button#scrollToTopButton amp-img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto
+        }
+        
+        .circle {
+            border-radius: 50%
+        }
+        
+        .shadow {
+            box-shadow: 0 .4rem 2rem rgba(50, 58, 67, .2)
+        }
+        
+        footer li {
+            list-style-type: none;
+            line-height: 1
+        }
+        
+        @media only screen and (min-width:768px) {
+            .center-desktop {
+                text-align: center
+            }
+        }
+        
+        @media only screen and (max-width:767px) {
+            footer a,
+            h4 {
+                line-height: 1
+            }
+            .inner_ul_abso {
+                position: static;
+                display: block;
+                background-color: transparent;
+                padding-left: 41px
+            }
+            .inner_ul_abso a,
+            .inner_ul_abso li {
+                margin: 0;
+                padding: 0
+            }
+            .caption p {
+                width: 70%;
+                display: block;
+                margin: 13px auto 0
+            }
+            .res div {
+                padding-top: 20px
+            }
+            .padL20 {
+                padding-left: 10px;
+                padding-bottom: 0;
+                padding-top: 7px
+            }
+        }
+        
+        .ui-top-bar h2 {
+            margin-bottom: 0
+        }
+        
+        .menu li a {
+            cursor: pointer
+        }
+        
+        .noprice {
+            color: #666;
+            text-decoration: line-through
+        }
+        
+        .menu li a,
+        .pricing-smaller-text p {
+            font-size: 1rem
+        }
+        
+        .fixed {
+            position: fixed
+        }
+        
+        .col-sm-10,
+        .col-sm-2 {
+            width: 100%
+        }
+        
+        @media (min-width:768px) {
+            .col-sm-2 {
+                -ms-flex: 0 0 16.666667%;
+                flex: 0 0 16.666667%;
+                max-width: 16.666667%
+            }
+            .col-sm-6 {
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%
+            }
+            .ui-top-bar h2 {
+                font-size: 1.6rem
+            }
+            .top-text {
+                border-left: 2px solid #ccc
+            }
+            .col-sm-10 {
+                -ms-flex: 0 0 83.333333%;
+                flex: 0 0 83.333333%;
+                max-width: 83.333333%
+            }
+            .sidebar {
+                position: fixed
+            }
+        }
+        
+        .inner_menu li {
+            margin-left: 0;
+            padding: 3px 10px
+        }
+        
+        #sidebar1 .last,
+        #target-element ul .last,
+        .inner_menu,
+        .logo-img span,
+        .logo-txt amp-img,
+        form.amp-form-submit-success>.form-inputs {
+            display: none
+        }
+        
+        .inner_menu li:hover {
+            background-color: gray
+        }
+        
+        .inner_menu li:hover a {
+            color: #fff
+        }
+        
+        h1 {
+            font-size: 2.5rem
+        }
+        
+        h2 {
+            font-size: 5vh
+        }
+        
+        h3 {
+            font-size: 4vh
+        }
+        
+        h4 {
+            font-size: 3vh
+        }
+        
+        h5 {
+            font-size: 2.5vh
+        }
+        
+        h6 {
+            font-size: 2vh
+        }
+        
+        .ui-top-bar h2,
+        a,
+        p {
+            font-size: 1.2rem
+        }
+        
+        .s {
+            font-size: 1rem
+        }
+        
+        .xs,
+        .xs a {
+            font-size: .8rem
+        }
+        
+        .btn,
+        a,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        input,
+        label,
+        p,
+        span {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: calc(100vw - 20px);
+            margin: auto
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            line-height: 1.2em;
+            font-family: var(--title-font)
+        }
+        
+        .btn,
+        a,
+        h6,
+        input,
+        label,
+        p,
+        span {
+            font-family: var(--text-font)
+        }
+        
+        h6 {
+            font-size: 18px;
+            line-height: 1.2em
+        }
+        
+        .btn,
+        a,
+        input,
+        p,
+        span {
+            letter-spacing: .9px
+        }
+        
+        .btn,
+        a,
+        input,
+        label,
+        p,
+        span {
+            font-weight: 400;
+            line-height: 1.8em
+        }
+        
+        p {
+            font-size: 14px
+        }
+        
+        input[type=email],
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            resize: vertical
+        }
+        
+        input[type=date]::-webkit-inner-spin-button {
+            display: none
+        }
+        
+        input[type=submit] {
+            padding: 12px 20px;
+            cursor: pointer;
+            margin-top: 25px
+        }
+        
+        input,
+        input[type=submit],
+        select,
+        textarea {
+            -webkit-appearance: none
+        }
+        
+        label {
+            padding: 12px 12px 0 0;
+            float: left;
+            font-size: 14px;
+            margin-top: 10px;
+            letter-spacing: 2.8px
+        }
+        
+         ::placeholder {
+            color: inherit;
+            opacity: .5
+        }
+        
+        .img-zoom {
+            top: 0;
+            left: 0;
+            margin: 0;
+            display: block;
+            position: relative;
+            overflow: hidden
+        }
+        
+        .img-zoom img {
+            -webkit-transform: scale(1.04);
+            -ms-transform: scale(1.04);
+            transform: scale(1.04);
+            transition: all 1s cubic-bezier(.25, .46, .45, .94)
+        }
+        
+        .img-zoom img:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            cursor: pointer
+        }
+        
+        .card-hover {
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .15);
+            transition: all .2s ease-in-out
+        }
+        
+        .card-hover:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23)
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative
+        }
+        
+        @media only screen and (max-width:1300px) {
+            .parallax {
+                background-attachment: scroll
+            }
+        }
+        
+         :root {
+            --space-2: 1rem
+        }
+        
+        amp-user-notification.cookie-notification {
+            padding: var(--space-2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, .823);
+            color: #fff;
+            z-index: 10000
+        }
+        
+        amp-user-notification.cookie-notification>button {
+            min-width: 80px
+        }
+        
+        .logo-txt span,
+        a {
+            display: block;
+            color: inherit
+        }
+        
+        a {
+            text-decoration: none;
+            transition: all .2s ease-in-out
+        }
+        
+        h1 a,
+        h2 a,
+        h3 a,
+        h4 a,
+        h5 a,
+        h6 a,
+        p a {
+            color: inherit;
+            font-size: inherit;
+            font-family: inherit;
+            display: inline-block
+        }
+        
+        .btn:hover,
+        a:hover {
+            opacity: .7
+        }
+        
+        header {
+            width: 100%;
+            z-index: 1000;
+            transform: translateY(0);
+            transition: all .4s ease;
+            left: 0;
+            top: calc(0px)
+        }
+        
+        header.nav-hide-on-scroll {
+            position: fixed;
+            overflow: hidden;
+            top: 0
+        }
+        
+        header .row.navrow {
+            position: relative;
+            min-height: 65px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0
+        }
+        
+        header.nav-fix,
+        header.nav-stick {
+            -webkit-box-shadow: 0 2px 6px -6px rgba(50, 58, 67, .3);
+            -moz-box-shadow: 0 2px 6px -6px rgba(50, 58, 67, .3)
+        }
+        
+        header .nav-stick {
+            position: sticky;
+            position: -webkit-sticky;
+            box-shadow: 0 2px 6px -6px rgba(50, 58, 67, .3)
+        }
+        
+        header.nav-fix {
+            position: fixed;
+            position: -webkit-fixed;
+            box-shadow: 0 3px 6px -6px rgba(50, 58, 67, .3)
+        }
+        
+        .hamburger,
+        .logo,
+        header.nav-abso {
+            position: absolute
+        }
+        
+        nav li {
+            margin: 0 15px
+        }
+        
+        nav a {
+            font-size: 17px;
+            color: #000
+        }
+        
+        .hamburger,
+        .logo {
+            border: 0;
+            margin: auto
+        }
+        
+        .hamburger {
+            display: none;
+            padding: 0;
+            width: auto;
+            height: auto;
+            z-index: 1;
+            outline: 0;
+            top: 0;
+            bottom: 0
+        }
+        
+        .hamburger::before {
+            content: "☰"
+        }
+        
+        .logo {
+            text-decoration: none;
+            top: auto;
+            bottom: auto
+        }
+        
+        .logo-img img {
+            display: block;
+            max-width: 200px
+        }
+        
+        .logo-txt span {
+            max-width: 320px
+        }
+        
+        .nav-1 .logo {
+            left: 0
+        }
+        
+        .nav-1 #target-element ul,
+        .nav-2 #target-element ul {
+            float: right
+        }
+        
+        @media only screen and (max-width:1500px) {
+            .nav-2 .logo {
+                left: 0
+            }
+        }
+        
+        .nav-3 .row {
+            flex-wrap: wrap
+        }
+        
+        .nav-3 .logo {
+            position: relative;
+            left: 0
+        }
+        
+        .nav-3 #target-element ul {
+            display: flex;
+            justify-content: center;
+            float: none
+        }
+        
+        .nav-4 .row {
+            flex-wrap: wrap
+        }
+        
+        .nav-4 .logo {
+            display: flex;
+            position: relative;
+            margin-left: 0
+        }
+        
+        .nav-4 #target-element ul,
+        .nav-4 .logo {
+            justify-content: flex-start
+        }
+        
+        .nav-4 #target-element ul li:first-child {
+            margin-left: 0
+        }
+        
+        .nav-5 .logo {
+            left: 0
+        }
+        
+        .nav-5 #target-element ul {
+            float: right;
+            width: calc(100vw - 450px)
+        }
+        
+        #target-element li:first-child:nth-last-child(n+7),
+        #target-element li:first-child:nth-last-child(n+7)~.last {
+            display: block
+        }
+        
+        #target-element ul li:nth-child(n+6):not(.last) {
+            display: none
+        }
+        
+        #sidebar1 {
+            padding: 0 70px 0 0
+        }
+        
+        #sidebar1 nav ul {
+            margin-top: 50px
+        }
+        
+        #sidebar1 nav ul li {
+            margin-top: 15px;
+            margin-left: 30px
+        }
+        
+        @media only screen and (max-width:1000px) {
+            #target-element {
+                display: none
+            }
+            .hamburger,
+            header[class^=nav] .hamburger {
+                display: block;
+                right: 0;
+                left: initial
+            }
+            .logo,
+            header[class^=nav] .logo {
+                left: 0;
+                right: initial;
+                position: absolute
+            }
+        }
+        
+        .fwrap {
+            flex-wrap: wrap;
+            justify-content: center;
+            transition: all .8s ease-in-out;
+            -webkit-overflow-scrolling: touch;
+            scroll-snap-type: mandatory
+        }
+        
+        section {
+            position: relative
+        }
+        
+        .amp-carousel-button {
+            display: none
+        }
+        
+        .title-big {
+            font-size: 7vh
+        }
+        
+        .title-med {
+            font-size: 4vh
+        }
+        
+        @media only screen and (max-width:800px) {
+            .fwrap {
+                flex-wrap: nowrap;
+                justify-content: initial
+            }
+            section {
+                overflow: hidden
+            }
+            [class^=title-] {
+                font-size: 30px
+            }
+        }
+        
+        .testimonial-carousel p {
+            font-size: 1.2vw
+        }
+        
+        .testimonial-carousel {
+            min-height: 30vh;
+            height: auto
+        }
+        
+        .testimonial-carousel .amp-carousel-button {
+            display: initial
+        }
+        
+        @media only screen and (max-width:800px) {
+            .testimonial-carousel {
+                height: 600px
+            }
+            .testimonial-carousel p {
+                font-size: 12px
+            }
+        }
+        
+        .p-0 {
+            padding: 0
+        }
+        
+        .fa {
+            font-weight: 500
+        }
+        
+        .container-fluid {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto
+        }
+        
+        [class*=column-] {
+            float: left;
+            padding: 0
+        }
+        
+        .column-ts,
+        [class*=one-line] .column-ts {
+            width: 25%
+        }
+        
+        .column-tl,
+        [class*=one-line] .column-tl {
+            width: 100%
+        }
+        
+        [class*=two-lines] .column-ts {
+            width: 50%;
+            padding-top: 20px
+        }
+        
+        [class*=two-lines] .column-tl {
+            width: 50%
+        }
+        
+        [class*=two-lines] .column-text {
+            margin-left: -12%
+        }
+        
+        [class*=-rounded] amp-img {
+            border-radius: 50%
+        }
+        
+        @media (min-width:320px) and (max-width:1024px) {
+            h4 {
+                font-size: unset
+            }
+            [class*=one-line] .column-ts {
+                width: 50%
+            }
+            [class*=one-line] .column-tl {
+                width: 100%;
+                margin-left: 0
+            }
+            [class*=two-lines] .column-ts {
+                width: 50%
+            }
+            [class*=two-lines] .column-tl {
+                width: 100%;
+                margin-left: 0
+            }
+        }
+        
+        @media only screen and (min-width:1026px) and (max-width:1200px) {
+            [class*=two-lines] .column-text {
+                margin-left: -5%
+            }
+        }
+        
+        @media only screen and (max-width:640px) {
+            [class*=one-line] .column-ts {
+                width: 100%;
+                padding-bottom: 15px
+            }
+            [class*=one-line] .column-tl {
+                width: 100%
+            }
+            [class*=two-lines] .column-ts {
+                width: 100%;
+                padding-bottom: 15px
+            }
+            [class*=two-lines] .column-tl {
+                width: 100%
+            }
+        }
+        
+        body {
+            --main-color-1: #fd9e3f;
+            --main-bg-color: #fff;
+            --main-tx-color-1: #fff;
+            --main-tx-color-2: #000;
+            --white-color: rgba(255, 0, 0, 0.5);
+            --navbar-bg-color: #fff;
+            --navbar-tx-color: #343a40;
+            --footer-bg-color: #fff;
+            --footer-tx-color: #343a40;
+            --title-font: 'Julius Sans One', sans-serif;
+            --text-font: 'roboto', sans-serif;
+            --main-btn-radius: 30px;
+            --title-1-desktop: 43px 'Julius Sans One', sans-serif;
+            --title-1-mobile: 35px 'Julius Sans One', sans-serif;
+            --title-2-desktop: 37px 'Julius Sans One', sans-serif;
+            --title-2-mobile: 28px 'Julius Sans One', sans-serif;
+            --title-3-desktop: 31px 'Julius Sans One', sans-serif;
+            --title-3-mobile: 27px 'Julius Sans One', sans-serif;
+            --title-4-desktop: 25px 'Julius Sans One', sans-serif;
+            --title-4-mobile: 18px 'Julius Sans One', sans-serif;
+            --text-1-desktop: 24px 'roboto', sans-serif;
+            --text-1-mobile: 23px 'roboto', sans-serif;
+            --text-2-desktop: 21px 'roboto', sans-serif;
+            --text-2-mobile: 21px 'roboto', sans-serif;
+            --text-3-desktop: 18px 'roboto', sans-serif;
+            --text-3-mobile: 18px 'roboto', sans-serif;
+            --text-4-desktop: 15px 'roboto', sans-serif;
+            --text-4-mobile: 13px 'roboto', sans-serif;
+            font-size: 1.0625rem;
+            position: relative
+        }
+        
+        * {
+            font-family: "Open Sans", Arial, sans-serif;
+        }
+        
+        .centered-left {
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .hero {
+            min-height: 75vh;
+        }
+        
+        .nav-1 ul {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+        }
+        
+        .nav-1 ul li {
+            height: 100%;
+            -ms-flex-item-align: stretch;
+            align-self: stretch;
+            margin-left: 2px;
+        }
+        
+        .nav-1 ul:not(:hover) li a.active {
+            background-color: #e09b23;
+            color: #FFF;
+        }
+        
+        .nav-1 ul li a::after {
+            display: none;
+        }
+        
+        .nav-1 ul li a {
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            white-space: normal;
+            border-radius: 4px;
+            color: #CCC;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            padding: 0.5rem 1rem;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+        }
+        
+        .amp-carousel-button {
+            display: unset;
+        }
+        
+        hr {
+            border: 0;
+            height: 56px;
+            margin: 22px 0;
+            box-sizing: content-box;
+            overflow: visible;
+        }
+        
+        .feature-thumb {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .feature-thumb-icon {
+            width: auto;
+            margin: -30px auto 0;
+            display: table;
+        }
+        
+        .feature-btn {
+            width: 168px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        
+        .full-menu-btn {
+            z-index: 1;
+        }
+        
+        .orange-color {
+            background-color: #e09b23;
+            border-color: #e09b23 #e09b23 #b67d1a;
+            color: #FFF;
+        }
+        
+        .orange {
+            color: #e09b23;
+        }
+        
+        .feature-text {
+            padding-top: 10px;
+            padding-bottom: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .feature-text h3 {
+            margin-bottom: 40px;
+        }
+        
+        .feature-text p {
+            margin-bottom: 20px;
+        }
+        
+        .feature-object {
+            border: 1px solid #ddd;
+        }
+        
+        .feature-object::after {
+            border: 1px solid #ddd;
+            bottom: 9px;
+            content: "";
+            height: 2px;
+            left: 23px;
+            position: absolute;
+            right: 23px;
+            width: auto;
+            z-index: 0;
+        }
+        
+        .feature-object::before {
+            border: 1px solid #ddd;
+            bottom: 12px;
+            content: "";
+            height: 2px;
+            left: 19px;
+            position: absolute;
+            right: 19px;
+            width: auto;
+            z-index: 0;
+        }
+        
+        .dots {
+            text-align: center;
+        }
+        
+        .dots span {
+            display: inline-block;
+            background: #ccc;
+            border-radius: 6px;
+            width: 8px;
+            height: 8px;
+            margin: 4px;
+        }
+        
+        .dots span.current {
+            background: #c8891c;
+        }
+        
+        blockquote::before {
+            color: #777;
+            display: block;
+            left: 120px;
+            top: 0;
+            content: "“";
+            font-size: 80px;
+            font-style: normal;
+            line-height: 1;
+            position: absolute;
+        }
+        
+        blockquote::after {
+            color: #777;
+            display: block;
+            right: 130px;
+            bottom: 25px;
+            font-size: 80px;
+            font-style: normal;
+            line-height: 1;
+            position: absolute;
+            content: "”";
+        }
+        
+        .hide-amp-controls .amp-carousel-button {
+            display: none;
+        }
+        
+        .testimonial-carousel {
+            height: unset;
+        }
+        
+        .gallery-row {
+            display: table;
+        }
+        
+        .gallery-row>[class*='col-'] {
+            float: none;
+            display: table-cell;
+            vertical-align: top;
+        }
+        
+        .gallery-wrapper::after {
+            content: "";
+            background: rgba(33, 37, 41, 0.8);
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            border-radius: 4px;
+            color: #FFF;
+            display: block;
+            opacity: 1;
+            z-index: 1;
+        }
+        
+        .gallery-wrapper img {
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            border-radius: 3px;
+            position: relative;
+            width: 100%;
+        }
+        
+        .gallery-thumb-custom::before {
+            border-top: 1px solid #ddd;
+            content: "";
+            height: 1px;
+            left: 20%;
+            position: absolute;
+            right: 2px;
+            top: 50%;
+            width: 60%;
+        }
+        
+        .gallery-thumb-custom::after {
+            border-left: 1px solid #ddd;
+            content: "";
+            height: 60%;
+            left: 50%;
+            position: absolute;
+            right: 2px;
+            top: 20%;
+            width: 1px;
+        }
+        
+        .justify-content-end {
+            display: flex;
+            justify-content: end;
+        }
+        
+        .align-content-center {
+            display: flex;
+            align-items: center;
+        }
+        
+        .blog-card {
+            position: relative;
+            text-decoration: none;
+            max-width: 100%;
+            background-color: #FFF;
+            border-radius: 4px;
+            overflow: hidden;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        
+        .bg-blog {
+            background-color: #EDEADA;
+            border-color: #e5e0c9;
+        }
+        
+        .bg-team {
+            background-color: #D1E7E7;
+            border-color: #c0dede;
+        }
+        
+        .team-card {
+            background: #f7f7f7;
+            margin: 0;
+            padding: 22px;
+            margin-top: -5px;
+        }
+        
+        .carousel-team {
+            height: 370px;
+            width: 540px;
+        }
+        
+        .carousel-blog {
+            height: 370px;
+            width: 500px;
+        }
+        
+        .read-more-orange {
+            color: #e09b23;
+        }
+        
+        amp-carousel>div:first-child {
+            scrollbar-width: none;
+            /* For Firefox */
+        }
+        
+        amp-carousel>div:first-child::-webkit-scrollbar {
+            display: none;
+            /* For Chromium */
+        }
+        
+        .special-menu-titles {
+            font-size: 24px;
+            margin: 0;
+            text-transform: none;
+            font-family: Georgia, serif;
+            font-style: italic;
+        }
+        
+        .special-menu-titles em {
+            font-size: 16px;
+        }
+        
+        .special-menu-text {
+            font-size: 16px;
+            font-family: Georgia, serif;
+            font-style: italic;
+            position: relative;
+            display: block;
+            color: #777;
+        }
+        
+        .special-menu-text::before {
+            border-bottom: 2px dotted #ddd;
+            content: "";
+            height: 1px;
+            left: 0%;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            z-index: 1;
+            color: #777;
+        }
+        
+        .special-menu-price {
+            font-size: 35px;
+            position: relative;
+            z-index: 3;
+        }
+        
+        .social-li {
+            display: inline-block;
+            margin: -1px 1px 0 0;
+            padding: 0;
+            border-radius: 100%;
+            overflow: visible;
+        }
+        
+        .social-btn {
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            border-radius: 100%;
+            display: block;
+            height: 28px;
+            line-height: 28px;
+            width: 28px;
+            text-align: center;
+            color: #333;
+            text-decoration: none;
+            font-size: 12.8px;
+            font-size: 0.8rem;
+            height: 48px;
+            line-height: 48px;
+            width: 48px;
+            background: rgba(255, 255, 255, 0.04);
+            color: #fff;
+        }
+        
+        .footer-menu {
+            display: inline-block;
+            padding: 0;
+            border-radius: 100%;
+            overflow: visible;
+        }
+        
+        .p-0 {
+            padding: 0;
+        }
+        
+        .mb-10,
+        .my-10 {
+            margin-bottom: 10px;
+        }
+        
+        .mt-10,
+        .my-10 {
+            margin-top: 10px;
+        }
+        
+        .mb-15,
+        .my-15 {
+            margin-bottom: 15px;
+        }
+        
+        .mt-15,
+        .my-15 {
+            margin-top: 15px;
+        }
+        
+        .mb-20,
+        .my-20 {
+            margin-bottom: 20px;
+        }
+        
+        .mt-20,
+        .my-20 {
+            margin-top: 20px;
+        }
+        
+        .pt-30,
+        .py-30 {
+            padding-top: 30px;
+        }
+        
+        .pb-30,
+        .py-30 {
+            padding-bottom: 30px;
+        }
+        
+        .pb-0,
+        .py-0 {
+            padding-bottom: 0;
+        }
+        
+        .pt-0,
+        .py-0 {
+            padding-top: 0;
+        }
+        
+        .pr-15,
+        .px-15 {
+            padding-right: 15px;
+        }
+        
+        .p-5 {
+            padding: 5px;
+        }
+        
+        .f-14 {
+            font-size: 14px;
+        }
+        
+        .f-10 {
+            font-size: 10px;
+        }
+        
+        .f-18 {
+            font-size: 18px;
+        }
+        
+        .f-11 {
+            font-size: 11px;
+        }
+        
+        .justify-content-center {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .justify-content-left {
+            display: flex;
+            justify-content: left;
+        }
+        
+        .justify-content-right {
+            display: flex;
+            justify-content: right;
+        }
+        
+        .align-content-center {
+            display: flex;
+            align-items: center;
+        }
+        
+        .white {
+            color: #fff;
+        }
+        
+        .top-bar-padding {
+            padding: 5px 0;
+        }
+        /* 
+	##Device = Tablets, Ipads (landscape)
+	##Screen = B/w 768px to 1024px
+	*/
+        
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .centered-left {
+                position: absolute;
+                top: 50%;
+                left: 33%;
+                transform: translate(-50%, -50%);
+            }
+            .hero {
+                min-height: 60vh;
+            }
+            .f-md-30 {
+                font-size: 30px;
+            }
+            blockquote::before {
+                left: 59px;
+                top: 40px;
+            }
+            blockquote::after {
+                right: 57px;
+                bottom: 60px;
+            }
+            .col-md-1 {
+                width: 8.33%;
+            }
+            .col-md-2 {
+                width: 16.66%
+            }
+            .col-md-10 {
+                width: 83.33%;
+            }
+            .col-md-6 {
+                width: 50%;
+            }
+            .col-md-3 {
+                width: 25%
+            }
+            .col-md-8 {
+                width: 66.66%
+            }
+            .col-md-12 {
+                width: 100%;
+            }
+            .display-table-md {
+                display: table
+            }
+            .center-md-s {
+                text-align: center
+            }
+            .justify-content-center-md {
+                display: flex;
+                justify-content: center;
+            }
+            .hide-md {
+                display: none;
+            }
+            .top-bar-padding {
+                padding: 10px 0;
+            }
+        }
+        
+        @media (min-width: 600px) and (max-width: 767px) {
+            blockquote::before {
+                left: 59px;
+                top: 76px;
+            }
+            blockquote::after {
+                right: 57px;
+                bottom: 92px;
+            }
+            .f-md-s-25 {
+                font-size: 25px;
+            }
+            .col-md-s-2 {
+                width: 16.66%
+            }
+            .col-md-s-3 {
+                width: 25%
+            }
+            .col-md-s-4 {
+                width: 33.33%
+            }
+            .col-md-s-6 {
+                width: 50%;
+            }
+            .col-md-s-8 {
+                width: 66.66%;
+            }
+            .col-md-s-12 {
+                width: 100%;
+            }
+            .col-md-s-1 {
+                width: 8.33%;
+            }
+            .col-md-s-10 {
+                width: 83.33%;
+            }
+            .center-md {
+                text-align: center
+            }
+            .display-table-md-s {
+                display: table
+            }
+            .justify-content-center-md {
+                display: flex;
+                justify-content: center;
+            }
+            .hide-md {
+                display: none;
+            }
+            .top-bar-padding {
+                padding: 10px 0;
+            }
+        }
+        /* 
+	##Device = Low Resolution Tablets, Mobiles (Landscape)
+	##Screen = B/w 481px to 767px
+	*/
+        
+        @media (min-width: 481px) and (max-width: 767px) {
+            .centered-left {
+                position: absolute;
+                top: 50%;
+                left: 40%;
+                transform: translate(-50%, -50%);
+            }
+            .hero {
+                min-height: 50vh;
+            }
+            .feature-thumb-icon {
+                position: absolute;
+                left: 50%;
+                top: 127px;
+                transform: translate(-50%, -50%);
+            }
+            .feature-text {
+                padding-top: 55px;
+            }
+        }
+        /* 
+	##Device = Most of the Smartphones Mobiles (Portrait)
+	##Screen = B/w 320px to 479px
+	*/
+        
+        @media (min-width: 320px) and (max-width: 480px) {
+            .centered-left {
+                position: absolute;
+                top: 55%;
+                left: 40%;
+                transform: translate(-50%, -50%);
+            }
+            .f-sm-8 {
+                font-size: 8px;
+            }
+            .f-sm-12 {
+                font-size: 12px;
+            }
+            .f-sm-11 {
+                font-size: 11px;
+            }
+            .f-sm-22 {
+                font-size: 22px;
+            }
+            .f-sm-25 {
+                font-size: 25px;
+            }
+            .hero {
+                min-height: 55vh;
+            }
+            blockquote::before {
+                left: 22px;
+                top: 0;
+            }
+            blockquote::after {
+                right: 37px;
+                bottom: 0;
+            }
+            .col-sm-12 {
+                width: 100%;
+            }
+            .pl-sm-0,
+            .px-sm-0 {
+                padding-left: 0;
+            }
+            .pr-sm-0,
+            .px-sm-0 {
+                padding-right: 0;
+            }
+            .col-sm-4 {
+                width: 33.33%;
+            }
+            .col-sm-6 {
+                width: 50%;
+            }
+            .col-sm-8 {
+                width: 66.66%;
+            }
+            .col-sm-3 {
+                width: 25%;
+            }
+            .col-sm-1 {
+                width: 8.33%;
+            }
+            .col-sm-10 {
+                width: 83.33%;
+            }
+            .carousel-team {
+                width: 270px;
+            }
+            .justify-content-center {
+                display: flex;
+                justify-content: center;
+            }
+            .justify-content-center-sm {
+                display: flex;
+                justify-content: center;
+            }
+            .align-content-center-sm {
+                display: flex;
+                align-items: center;
+            }
+            .p-sm-0 {
+                padding: 0;
+            }
+            .col-sm-1 {
+                width: 8.33%;
+            }
+            .col-sm-10 {
+                width: 83.33%;
+            }
+            .display-table-sm {
+                display: table
+            }
+            .display-block-sm {
+                display: block
+            }
+            .p-sm-10 {
+                padding: 10px;
+            }
+            .center-sm {
+                text-align: center
+            }
+            .hide-sm {
+                display: none;
+            }
+            .top-bar-padding {
+                padding: 10px 0;
+            }
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Anton&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Google amp-analytics -->
+    <amp-analytics type="gtag" data-credentials="include">
+        <script type="application/json">
+            {
+                "vars": {
+                    "gtag_id": "UA-00000000-1",
+                    "config": {
+                        "UA-00000000-1": {
+                            "groups": "default"
+                        }
+                    }
+                }
+            }
+        </script>
+    </amp-analytics>
+
+    <div id="top-page"></div>
+
+    <amp-animation id="showAnim" layout="nodisplay">
+        <script type="application/json">
+            {
+                "duration": "200ms",
+                "fill": "both",
+                "iterations": "1",
+                "direction": "alternate",
+                "animations": [{
+                    "selector": "#scrollToTopButton",
+                    "keyframes": [{
+                        "opacity": "1",
+                        "visibility": "visible"
+                    }]
+                }]
+            }
+        </script>
+    </amp-animation>
+    <!-- ... and the second one is for adding the button.-->
+    <amp-animation id="hideAnim" layout="nodisplay">
+        <script type="application/json">
+            {
+                "duration": "200ms",
+                "fill": "both",
+                "iterations": "1",
+                "direction": "alternate",
+                "animations": [{
+                    "selector": "#scrollToTopButton",
+                    "keyframes": [{
+                        "opacity": "0",
+                        "visibility": "hidden"
+                    }]
+                }]
+            }
+        </script>
+    </amp-animation>
+    <!-- We use `amp-position-observer` to start the animation when the user starts to scroll. -->
+    <div id="marker">
+        <amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay">
+        </amp-position-observer>
+    </div>
+
+    <div style="background-color: rgb(52, 66, 87);">
+        <div style="padding:0px 5%;">
+            <div class="row">
+                <div class="col-6 p-5 hide-sm hide-md justify-content-left align-content-center justify-content-center-sm justify-content-center-md" style="flex-wrap: wrap; height: auto;">
+                    <a href="#" class="link" style="color: rgb(255, 255, 255); cursor: pointer; font-size: 13px; text-decoration: none; transition: all 0.2s ease 0s; letter-spacing: 0.1em; margin: 5px 10px;">+1 213 123 1234</a>
+                </div>
+                <div class="col-6 p-5 justify-content-right align-content-center justify-content-center-sm justify-content-center-md" style="flex-wrap: wrap; height: auto;">
+                    <a href="#" class="link" style="color: rgb(255, 255, 255); cursor: pointer; font-size: 13px; text-decoration: none; transition: all 0.2s ease 0s; letter-spacing: 0.1em; margin: 5px 10px;">6555 Barton Ave Los Angeles CA 90038</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <amp-sidebar id="sidebar1" layout="nodisplay" side="right" class="shadow" style="background-color:var(--main-color-1);">
+        <button style="background:transparent; border:none;font-size:30px;width: 30px;height: 30px; position:absolute; padding:0; top:6px; left:6px;color:var(--navbar-tx-color);" on="tap:sidebar1.close">&#x2715;</button>
+        <nav toolbar="(min-width: 767px)" toolbar-target="target-element" style="overflow: hidden;padding: 0;">
+            <ul style="list-style: none; padding:0; position:relative; z-index:2;">
+                <li><a style="text-decoration: none;cursor: pointer;color:var(--navbar-tx-color);">ABOUT</a></li>
+                <li><a style="text-decoration: none;cursor: pointer;color:var(--navbar-tx-color);">OUR WORKS</a></li>
+                <li><a style="text-decoration: none;cursor: pointer;color:var(--navbar-tx-color);">TEAM</a></li>
+                <li><a style="text-decoration: none;cursor: pointer;color:var(--navbar-tx-color);">CONTACT</a></li>
+                <li class="last"><a on="tap:sidebar1.toggle" style="text-decoration: none;cursor: pointer;">MORE</a></li>
+            </ul>
+        </nav>
+    </amp-sidebar>
+
+    <header class="nav-1 nav-stick" style="background-color:var(--navbar-bg-color); padding:5px 5%;" id="i05421460295656502">
+        <div class="row navrow" style="position:relative;">
+            <a href="/" class="logo logo-img" style=" display:flex; font-size:25px;">
+                <span style="color:var(--navbar-tx-color)">MOURCHID MED Kamal.</span>
+                <amp-img src="data/logo2.png" width="400" height="128" layout="intrinsic" class="cover" alt="logo"></amp-img>
+            </a>
+            <div class="col-12" id="target-element" style="padding:0;">
+            </div>
+            <button on="tap:sidebar1.toggle" class="hamburger" style="background-color: transparent; font-size:2rem;color:var(--navbar-tx-color);" aria-label="menu"></button>
+        </div>
+    </header>
+    <!-- START Here Copy and paste whatever you need inside -->
+    <section class="parallax hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(''); background-repeat: no-repeat; background-position: center center; background-size: cover; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+        <div class="container">
+            <div class="row" style="display:flex; flex-wrap: wrap;">
+                <div class="col-12" amp-fx="fade-in">
+                    <!-- Carousel -->
+                    <amp-carousel controls="" autoplay="" delay="3000" layout="fill" type="slides" width="10">
+                        <div style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(data/slide-restaurant-1.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;height: 100%;width: 100%;">
+                            <div class="centered-left">
+                                <p amp-fx="fade-in" class="display-title-4" style="color:var(--main-tx-color-1);">Welcome to
+                                    <amp-img amp-fx="fade-in" src="data/slide-title-border.png" alt="" width="37" height="10"></amp-img>
+                                </p>
+                                <h1 amp-fx="float-in-bottom" class="display-title-1" style="color: var(--main-tx-color-1);margin: 3px 0px;">The Porto</h1>
+                                <p amp-fx="float-in-bottom" style="color: var(--main-tx-color-1);margin-bottom: 7px;" class="display-title-4">The best place to eat in downtown Porto!</p>
+                                <a amp-fx="float-in-bottom" class="btn orange-color btn-primary display-text-4" href="#" style="color: var(--main-tx-color-1); background-color: var(--main-color-1);">Order now</a>
+                            </div>
+                        </div>
+
+                        <div style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(data/slide-restaurant-2.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;height: 100%;width: 100%;">
+                            <div class="centered-left">
+                                <p amp-fx="fade-in" class="display-title-4" style="color:var(--main-tx-color-1);">Best ingredients, freshly prepared!
+                                    <amp-img amp-fx="fade-in" src="data/slide-title-border.png" alt="" width="37" height="10"></amp-img>
+                                </p>
+                                <h1 amp-fx="float-in-bottom" class="display-title-1" style="color: var(--main-tx-color-1);margin: 3px 0px;">Delicious!!!</h1>
+                                <p amp-fx="float-in-bottom" style="color: var(--main-tx-color-1);" class="display-title-4">The best place to eat in downtown Porto!</p>
+                            </div>
+                        </div>
+
+                    </amp-carousel>
+                    <!-- Carousel -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parallax" style="padding: 48px 0px;background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)), url(https://cdn.web.com/template/default/bg1.png); background-repeat: no-repeat; background-position: center center; background-size: cover; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+        <div class="container">
+            <div class="row" style="display:flex;justify-content: center; align-items: center;">
+                <div class="col-6 col-sm-12 center" amp-fx="fade-in">
+                    <h2 amp-fx="fade-in" class="display-title-3" style="color: var(--main-tx-color-2);margin: 3px 0px;">Enjoy Your Meal</h2>
+                    <p amp-fx="fade-in" style="color: var(--main-tx-color-2);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-s-12 col-md-12 col-sm-12">
+                    <hr style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(data/custom-divider-1.png); background-repeat: no-repeat; background-position: center center;">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-4 col-md-s-6 col-md-6 col-sm-12" style="position:relative;">
+                    <div class="feature-object">
+                        <amp-img src="data/blog-restaurant-1.png" width="360" height="170" layout="intrinsic" alt="logo"></amp-img>
+                        <amp-img src="data/restaurant-icon-1.png" width="64" height="80" layout="intrinsic" alt="logo" class="feature-thumb-icon"></amp-img>
+                        <div class="feature-text center">
+                            <h3 amp-fx="fade-in" class="display-title-4" style="color: var(--main-tx-color-2);">Sweets</h3>
+                            <p amp-fx="fade-in" style="color: var(--main-tx-color-2);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        </div>
+                        <a href="#" class="feature-btn btn orange-color" class="btn" style="color: var(--main-tx-color-1); background-color: var(--main-color-1);">View more <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-4 col-md-s-6 col-md-6 col-sm-12" style="position:relative;">
+                    <div class="feature-object">
+                        <amp-img src="data/blog-restaurant-2.png" width="360" height="170" layout="intrinsic" alt="logo"></amp-img>
+                        <amp-img src="data/restaurant-icon-2.png" width="64" height="80" layout="intrinsic" alt="logo" class="feature-thumb-icon"></amp-img>
+                        <div class="feature-text center">
+                            <h3 amp-fx="fade-in" class="display-title-4" style="color: var(--main-tx-color-2);">Coffee & Beer</h3>
+                            <p amp-fx="fade-in" style="color: var(--main-tx-color-2);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        </div>
+                        <a href="#" class="feature-btn btn" class="btn" style="color: var(--main-tx-color-1); background-color: var(--main-color-1);">View more <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-4 col-md-s-6 col-md-6 col-sm-12" style="position:relative;">
+                    <div class="feature-object">
+                        <amp-img src="data/blog-restaurant-3.png" width="360" height="170" layout="intrinsic" alt="logo"></amp-img>
+                        <amp-img src="data/restaurant-icon-3.png" width="64" height="80" layout="intrinsic" alt="logo" class="feature-thumb-icon"></amp-img>
+                        <div class="feature-text center">
+                            <h3 amp-fx="fade-in" class="display-title-4" style="color: var(--main-tx-color-2);">Cake & Cookies</h3>
+                            <p amp-fx="fade-in" style="color: var(--main-tx-color-2);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        </div>
+                        <a href="#" class="feature-btn btn" class="btn" style="color: var(--main-tx-color-1); background-color: var(--main-color-1);">View more <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="parallax" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(data/parallax-restaurant.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover; min-height: 615px;margin: 30px 0;padding: 50px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <hr style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(data/custom-divider-1.png); background-repeat: no-repeat; background-position: center center;">
+                </div>
+                <div class="col-12 col-sm-12 hide-amp-controls" style="padding: 0px;">
+                    <amp-carousel class="testimonial-carousel" width="1920" height="400" layout="responsive" type="slides" autoplay="" loop="" delay="4000" on="slideChange:AMP.setState({selected: {slide: event.index}})">
+                        <div style="display:flex; justify-content: center; align-items: center;">
+                            <div style="width: 80%;margin: 0 auto;padding: 5% 0;">
+                                <blockquote>
+                                    <p style="text-align: center;color: #082344;">"Since we signed up we've popped up to the top of our localized map and gained so many new reviews with their software. This is the first company that has actually followed through with their promises and gotten us
+                                        results. Great job GoSite."
+                                    </p>
+                                </blockquote>
+                                <h3 class="display-title-4" style="text-align: center;letter-spacing: 0.5px;color: #082344;margin-top: 40px;">Rick Beaubouef </h3>
+                                <p class="display-text-4" style="text-align: center;color: #082344;">Porto Magazine</p>
+                            </div>
+                        </div>
+                        <div style="display:flex; justify-content: center; align-items: center;">
+                            <div style="width: 80%;margin: 0 auto;">
+                                <blockquote>
+                                    <p style="text-align: center;color: #082344;">"I have been super impressed with GoSite and the entire staff. I recommend that you utilize their services if you want to move your business to the next level. Thanks, GoSite for making my life so much better and helping
+                                        us increase our bottom line."
+                                    </p>
+                                </blockquote>
+                                <h3 class="display-title-4" style="text-align: center;letter-spacing: 0.5px;color: #082344;margin-top: 40px;">Scott Kelley</h3>
+                                <p class="display-text-4" style="text-align: center;color: #082344;">Porto Magazine</p>
+                            </div>
+                        </div>
+                    </amp-carousel>
+                    <p class="dots">
+                        <span [class]="selected.slide == 0 ? 'current' : ''" class="current"></span>
+                        <span [class]="selected.slide == 1 ? 'current' : ''"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="parallax" style="background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)), url(https://cdn.web.com/template/default/bg1.png); background-repeat: no-repeat; background-position: center center; background-size: cover; min-height: 615px;margin: 30px 0;padding: 50px 0;">
+        <div class="container">
+            <div class="row" style="display:flex;justify-content: center; align-items: center;">
+                <div class="col-6 col-sm-12 center" amp-fx="fade-in">
+                    <h2 amp-fx="fade-in" class="display-title-3" style="color: var(--main-tx-color-2);margin: 3px 0px;">Our Gallery</h2>
+                    <p amp-fx="fade-in" style="color: var(--main-tx-color-2);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <hr style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(data/custom-divider-1.png); background-repeat: no-repeat; background-position: center center;">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-sm-3 col-md-3 col-md-s-3" style="padding: 0;">
+                    <div class="row gallery-wrapper">
+                        <div class="col-12" style="padding: 0;">
+                            <amp-img on="tap:lightbox1" role="button" tabindex="0" src="data/restaurant-gallery-1.jpg" width="570" height="570" layout="responsive" alt=""></amp-img>
+                        </div>
+                    </div>
+                    <div class="row gallery-wrapper">
+                        <div class="col-12" style="padding: 0;">
+                            <amp-img on="tap:lightbox1" role="button" tabindex="0" src="data/restaurant-gallery-2.jpg" width="570" height="570" layout="responsive" alt=""></amp-img>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-md-s-6 gallery-wrapper" style="padding: 0;">
+                    <amp-img on="tap:lightbox1" role="button" tabindex="0" src="data/restaurant-gallery-4.jpg" width="570" height="570" layout="responsive" alt=""></amp-img>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-md-s-3" style="padding: 0;">
+                    <div class="row">
+                        <div class="col-12 gallery-wrapper" style="padding: 0;">
+                            <amp-img on="tap:lightbox1" role="button" tabindex="0" src="data/restaurant-gallery-3.jpg" width="570" height="570" layout="responsive" alt=""></amp-img>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 gallery-wrapper" style="padding: 0;">
+                            <amp-img on="tap:lightbox1" role="button" tabindex="0" src="data/restaurant-gallery-5.jpg" width="570" height="570" layout="responsive" alt=""></amp-img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <amp-image-lightbox id="lightbox1" layout="nodisplay"></amp-image-lightbox>
+    </section>
+
+    <section class="parallax" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(data/parallax-restaurant.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;margin: 30px 0;">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-6 col-sm-12 col-md-12 col-md-s-12 px-sm-0 bg-blog py-30">
+                    <div class="row justify-content-end">
+                        <div class="col-7 px-sm-0 col-sm-12 col-md-12 col-md-s-12 center">
+                            <h2 amp-fx="fade-in" class="display-title-3" style="color: var(--main-tx-color-2);margin: 3px 0px;">Our Blog</h2>
+                            <p amp-fx="fade-in" style="color: var(--main-tx-color-2);">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                            <hr style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(data/custom-divider-1.png); background-repeat: no-repeat; background-position: center center;">
+                            <div class="carousel-blog" style="margin: auto;">
+                                <amp-carousel height="370" layout="fixed-height" type="slides">
+                                    <div>
+                                        <div class="row left blog-card">
+                                            <div class="col-4 col-sm-3 col-md-3 col-md-s-3 p-0">
+                                                <amp-img src="data/blog-restaurant-6.jpg" width="330" height="330" layout="responsive" alt="logo"></amp-img>
+                                            </div>
+                                            <div class="col-8 col-sm-8 col-md-8 col-md-s-8 pb-0">
+                                                <h4 class="mt-10 f-sm-12 mb-15 f-18">Lorem ipsum dolor sit</h4>
+                                                <p class="mb-15 f-sm-8 f-11">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor...</p>
+                                                <a href="#" class="read-more-orange f-11">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="row left blog-card mt-10">
+                                            <div class="col-4 col-md-3 col-sm-3 col-md-s-3 p-0">
+                                                <amp-img src="data/blog-restaurant-5.jpg" width="330" height="330" layout="responsive" alt="logo"></amp-img>
+                                            </div>
+                                            <div class="col-8 col-sm-8 col-md-8 col-md-s-8 pb-0">
+                                                <h4 class="mt-10 f-sm-12 mb-15 f-18">Lorem ipsum dolor sit</h4>
+                                                <p class="mb-15 f-sm-8 f-11">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor...</p>
+                                                <a href="#" class="read-more-orange f-11">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="row left blog-card">
+                                            <div class="col-4 col-md-3 col-sm-3 col-md-s-3 p-0">
+                                                <amp-img src="data/blog-restaurant-4.jpg" width="330" height="330" layout="responsive" alt="logo"></amp-img>
+                                            </div>
+                                            <div class="col-8 col-sm-8 col-md-8 col-md-s-8 pb-0">
+                                                <h4 class="mt-10 f-sm-12 mb-15 f-18">Lorem ipsum dolor sit</h4>
+                                                <p class="mb-15 f-sm-8 f-11">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor...</p>
+                                                <a href="#" class="read-more-orange f-11">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="row left blog-card mt-10">
+                                            <div class="col-4 col-md-3 col-sm-3 col-md-s-3 p-0">
+                                                <amp-img src="data/blog-restaurant-5.jpg" width="330" height="330" layout="responsive" alt="logo"></amp-img>
+                                            </div>
+                                            <div class="col-8 col-sm-8 col-md-8 col-md-s-8 pb-0">
+                                                <h4 class="mt-10 f-sm-12 mb-15 f-18">Lorem ipsum dolor sit</h4>
+                                                <p class="mb-15 f-sm-8 f-11">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor...</p>
+                                                <a href="#" class="read-more-orange f-11">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </amp-carousel>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-sm-12 col-md-12 col-md-s-12 bg-team py-30">
+                    <div class="row">
+                        <div class="col-6 col-sm-12 col-md-12 col-md-s-12 px-sm-0 center">
+                            <h2 amp-fx="fade-in" class="display-title-3" style="color: var(--main-tx-color-2);margin: 3px 0px;">Our Team</h2>
+                            <p amp-fx="fade-in" style="color: var(--main-tx-color-2);">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                            <hr style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(data/custom-divider-1.png); background-repeat: no-repeat; background-position: center center;">
+                            <div class="carousel-team" style="margin: auto;">
+                                <amp-carousel height="370" layout="fixed-height" type="carousel">
+                                    <div>
+                                        <div>
+                                            <amp-img src="data/team-26.jpg" width="270" height="270" layout="intrinsic" alt="logo"></amp-img>
+                                        </div>
+                                        <div class="team-card">
+                                            <h4 class="f-14">Jessica Doe</h4>
+                                            <p class="f-10">Chef</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <amp-img src="data/team-27.jpg" width="270" height="270" layout="intrinsic" alt="logo"></amp-img>
+                                        </div>
+                                        <div class="team-card">
+                                            <h4 class="f-14">Jessica Doe</h4>
+                                            <p class="f-10">Chef</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <amp-img src="data/team-28.jpg" width="270" height="270" layout="intrinsic" alt="logo"></amp-img>
+                                        </div>
+                                        <div class="team-card">
+                                            <h4 class="f-14">Jessica Doe</h4>
+                                            <p class="f-10">Chef</p>
+                                        </div>
+                                    </div>
+                                </amp-carousel>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parallax" style="background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)), url(data/parallax-restaurant.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;margin-top: 30px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8 center">
+                    <h2 amp-fx="fade-in" class="display-title-3" style="color: var(--main-tx-color-2);margin: 3px 0px;">Special Menu</h2>
+                    <p amp-fx="fade-in" style="color: var(--main-tx-color-2);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <hr style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(data/custom-divider-1.png); background-repeat: no-repeat; background-position: center center;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 p-sm-0">
+
+                    <div class="row my-20 align-content-center">
+                        <div class="col-1 col-md-2 col-md-s-2">
+                            <amp-img src="data/product-1.jpg" width="68" height="68" layout="responsive" alt=""></amp-img>
+                        </div>
+                        <div class="col-10 col-md-10 col-md-s-10 p-0">
+                            <h4 class="special-menu-titles f-sm-25" style="color: var(--main-tx-color-2);">Monday <em>Special</em></h4>
+                            <p amp-fx="fade-in" class="special-menu-text f-sm-11" style="color: var(--main-tx-color-2);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna.</p>
+                        </div>
+                        <div class="col-1 col-md-1 col-md-s-1 p-0">
+                            <p amp-fx="fade-in" class="special-menu-price f-sm-22 f-md-30 f-md-s-25" style="color: var(--main-tx-color-2);">$29</p>
+                        </div>
+                    </div>
+
+                    <div class="row my-20 align-content-center">
+                        <div class="col-1 col-md-2 col-md-s-2">
+                            <amp-img src="data/product-2.jpg" width="68" height="68" layout="responsive" alt=""></amp-img>
+                        </div>
+                        <div class="col-10 col-md-10 col-md-s-10 p-0">
+                            <h4 class="special-menu-titles f-sm-25" style="color: var(--main-tx-color-2);">Tuesday <em>Special</em></h4>
+                            <p amp-fx="fade-in" class="special-menu-text f-sm-11" style="color: var(--main-tx-color-2);">Lorem ipsum dolor sit amet. Donec eu pulvinar magna.</p>
+                        </div>
+                        <div class="col-1 col-md-1 col-md-s-1 p-0">
+                            <p amp-fx="fade-in" class="special-menu-price f-sm-22 f-md-30 f-md-s-25" style="color: var(--main-tx-color-2);">$39</p>
+                        </div>
+                    </div>
+
+                    <div class="row my-20 align-content-center">
+                        <div class="col-1 col-md-2 col-md-s-2">
+                            <amp-img src="data/product-3.jpg" width="68" height="68" layout="responsive" alt=""></amp-img>
+                        </div>
+                        <div class="col-10 col-md-10 col-md-s-10 p-0">
+                            <h4 class="special-menu-titles f-sm-25" style="color: var(--main-tx-color-2);">Wednesday <em>Special</em></h4>
+                            <p amp-fx="fade-in" class="special-menu-text f-sm-11" style="color: var(--main-tx-color-2);">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="col-1 col-md-1 col-md-s-1 p-0">
+                            <p amp-fx="fade-in" class="special-menu-price f-sm-22 f-md-30 f-md-s-25" style="color: var(--main-tx-color-2);">$24</p>
+                        </div>
+                    </div>
+
+                    <div class="row my-20 align-content-center">
+                        <div class="col-1 col-md-2 col-md-s-2">
+                            <amp-img src="data/product-4.jpg" width="68" height="68" layout="responsive" alt=""></amp-img>
+                        </div>
+                        <div class="col-10 col-md-10 col-md-s-10 p-0">
+                            <h4 class="special-menu-titles f-sm-25" style="color: var(--main-tx-color-2);">Thursday <em>Special</em></h4>
+                            <p amp-fx="fade-in" class="special-menu-text f-sm-11" style="color: var(--main-tx-color-2);">Lorem ipsum dolor sit amet magna.</p>
+                        </div>
+                        <div class="col-1 col-md-1 col-md-s-1 p-0">
+                            <p amp-fx="fade-in" class="special-menu-price f-sm-22 f-md-30 f-md-s-25" style="color: var(--main-tx-color-2);">$39</p>
+                        </div>
+                    </div>
+
+                    <div class="row my-20 align-content-center">
+                        <div class="col-1 col-md-2 col-md-s-2">
+                            <amp-img src="data/product-5.jpg" width="68" height="68" layout="responsive" alt=""></amp-img>
+                        </div>
+                        <div class="col-10 col-md-10 col-md-s-10 p-0">
+                            <h4 class="special-menu-titles f-sm-25" style="color: var(--main-tx-color-2);">Friday <em>Special</em></h4>
+                            <p amp-fx="fade-in" class="special-menu-text f-sm-11" style="color: var(--main-tx-color-2);">Lorem ipsum dolor sit amet adipiscing elit. Donec eu pulvinar magna.</p>
+                        </div>
+                        <div class="col-1 col-md-1 col-md-s-1 p-0">
+                            <p amp-fx="fade-in" class="special-menu-price f-sm-22 f-md-30 f-md-s-25" style="color: var(--main-tx-color-2);">$59</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row justify-content-center" style="background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(data/background-restaurant.png); background-repeat: no-repeat; background-position: bottom; background-size: contain; min-height: 120px;">
+                <div class="col-12 justify-content-center">
+                    <a href="#" class="full-menu-btn orange-color btn" style="color: var(--main-tx-color-1); background-color: var(--main-color-1);">Full Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer data-my-background-image style="background-image: linear-gradient(rgb(52,66,87, 1), rgb(52,66,87, 1)), url('https://cdn.web.com/template/default/bg2.png'); background-repeat: no-repeat; background-position: center center; background-size: cover; padding-top: 30px;">
+        <div class="container-fuild p-0">
+            <div class="row">
+                <div class="col-12 justify-content-center">
+                    <ul class="p-0">
+                        <li class="social-li"><a href="#" class="social-btn"><i class="fab fa-facebook-f white"></i></a></li>
+                        <li class="social-li"><a href="#" class="social-btn"><i class="fab fa-twitter white"></i></a></li>
+                        <li class="social-li"><a href="#" class="social-btn"><i class="fab fa-linkedin-in white"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row" style="border-top: 1px solid rgba(255, 255, 255, 0.05);">
+                <div class="container">
+                    <div class="row align-content-center display-table-sm display-table-md display-table-md-s">
+                        <div class="col-6 col-sm-12 col-md-12 col-md-s-12">
+                            <ul class="p-0 center-sm center-md center-md-s">
+                                <li class="footer-menu display-block-sm p-sm-10"><a href="#" class="f-11 white"><i class="far fa-dot-circle orange"></i> 1234 Street Name, City Name</a></li>
+                                <li class="footer-menu display-block-sm p-sm-10" style="margin: 0px 10px"><a href="#" class="f-11 white"><i class="fab fa-whatsapp orange"></i> (800) 123-4567</a></li>
+                                <li class="footer-menu display-block-sm p-sm-10"><a href="#" class="f-11 white"><i class="fab fa-envelope orange"></i> mail@example.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-12 right center-sm center-md center-md-s col-md-12 col-md-s-12">
+                            <p class="f-11 white">© Copyright 2019. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- END -->
+
+    <amp-user-notification id="my-notification" class="cookie-notification" layout="nodisplay">
+        <p>This website uses cookies to ensure you get the best experience on our website.</p>
+        <button on="tap:my-notification.dismiss" style="margin-left: 5px; background-color:#fff;border:none; line-height:20px;">I accept</button>
+    </amp-user-notification>
+
+    <button id="scrollToTopButton" on="tap:top-page.scrollTo(duration=800)" class="scrollToTop btn" style="background-color:#000; text-align:center; border-radius:20em;padding:10px;" aria-label="scrolltotop">
+			<amp-img width="30" height="30" layout="fixed" src="data/angle-double-up-solid.svg"></amp-img>
+		</button>
+
+</body>
+
+</html>
